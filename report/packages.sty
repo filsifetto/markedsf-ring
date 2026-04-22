@@ -1,0 +1,130 @@
+% Basert på NTNU IMT-mal (Jon Arnt Kårstad), tilpasset for Markedsplan Zipline
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{packages}[2026/04/17 Markedsplan Zipline packages]
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Appendiks ---
+\usepackage{appendix}
+\newcommand{\addappendix}{
+    \newpage
+    \appendix
+    \section*{Vedlegg}
+    \addcontentsline{toc}{section}{Vedlegg}
+    \renewcommand{\thesubsection}{\Alph{subsection}}
+}
+
+% --- Bibliografi ---
+\usepackage[backend=biber,
+            style=apa,
+            sortcites=true,
+            urldate=long,
+            ]{biblatex}
+% \DeclareLanguageMapping{norsk}{norwegian-bokmal} % deaktivert uten norsk babel
+\addbibresource{references.bib}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[nottoc]{tocbibind}
+\newcommand{\source}[1]{\vspace{-4pt}\caption*{\hfill\footnotesize{Kilde: {#1}}}}
+
+% --- Farger og tabeller ---
+\usepackage[dvipsnames]{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{longtable}
+
+\definecolor{highred}{RGB}{220,80,80}
+\definecolor{medorange}{RGB}{240,160,60}
+\definecolor{lowgreen}{RGB}{80,170,100}
+\definecolor{tableheader}{RGB}{40,80,120}
+\definecolor{tablerow}{RGB}{235,241,248}
+
+% --- Flytdiagrammer ---
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+% --- Forord ---
+\newcommand{\frontmatter}{
+    \pagenumbering{roman}
+}
+
+% --- Generelt ---
+\usepackage{import}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage{comment}
+\usepackage{pdfpages}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{parskip}
+
+% --- Bilder ---
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{url}
+\urlstyle{sf}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% --- Språk ---
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={,}}
+% Norsk babel-pakke er ikke installert lokalt; bruker english som fallback og
+% overstyrer navnene slik at dokumentet likevel fremstår på norsk.
+\usepackage[english]{babel}
+\addto\captionsenglish{
+    \renewcommand*\contentsname{Innholdsfortegnelse}
+    \renewcommand{\listfigurename}{Figurliste}
+    \renewcommand{\listtablename}{Tabelliste}
+    \renewcommand{\bibname}{Referanser}
+    \renewcommand{\refname}{Referanser}
+    \renewcommand{\tablename}{Tabell}
+    \renewcommand{\figurename}{Figur}
+}
+\def\equationautorefname{Ligning}
+\def\figureautorefname{Figur}
+\def\tableautorefname{Tabell}
+\def\sectionautorefname{Seksjon}
+\def\subsectionautorefname{\sectionautorefname}
+\def\subsubsectionautorefname{\sectionautorefname}
+
+% --- Hoveddel ---
+\newcommand{\mainmatter}{
+    \newpage
+    \pagenumbering{arabic}
+}
+
+% --- Matematikk ---
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{textcomp}
+\usepackage{gensymb}
+
+% --- Side-oppsett ---
+\usepackage[a4paper, total={150mm, 245mm, footskip=14mm}]{geometry}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.8em}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.1ex}
+\renewcommand{\footrulewidth}{0.1ex}
+\lhead{\textit{Markedsplan Zipline}}
+\rhead{\textit{TIØ4165 -- Øving 3}}
+\fancyfoot[C]{\thepage}

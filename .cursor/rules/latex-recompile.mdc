@@ -1,0 +1,15 @@
+---
+description: Recompile LaTeX files after every edit
+globs: "**/*.tex"
+alwaysApply: false
+---
+
+# Recompile after editing LaTeX
+
+After making any change to a `.tex` file, always recompile it to PDF by running:
+
+```
+pdflatex -interaction=nonstopmode <filename>.tex
+```
+
+Run the command from the project root. If compilation produces errors, fix them before moving on.

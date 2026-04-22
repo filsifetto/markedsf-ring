@@ -1,0 +1,46 @@
+---
+description: Argumentation structure and evidence—pyramid principle and grounding
+alwaysApply: true
+---
+
+# Argumentation in Documents
+
+When writing or editing arguments in this project, follow these standards.
+
+## Logical structure (pyramid principle)
+
+- **Lead with the conclusion or main message** at the top of each section or argument.
+- **Support with reasons** in a clear hierarchy: main point → key reasons → supporting details.
+- **One idea per section**: one main claim per paragraph or block, then evidence and sub-points.
+- **Order by importance or logic**: strongest or most relevant point first, or use a clear sequence (e.g. problem → cause → solution).
+
+Structure to aim for:
+1. **Top**: Main claim or recommendation (answer first).
+2. **Middle**: 3–5 key supporting arguments or reasons.
+3. **Bottom**: Data, examples, and details that back each reason.
+
+## Grounding
+
+Every non-obvious claim must be grounded in at least one of:
+
+- **Empirical data**: studies, surveys, statistics, experiments, or direct observation. Cite source and method when possible.
+- **Theory**: established frameworks, models, or concepts from the field. Name the theory and how it applies.
+- **Comparison**: analogous cases, benchmarks, or prior examples. Specify what is compared and what we learn from it.
+
+Avoid unsupported assertions. If evidence is missing, flag it or phrase as a hypothesis to be tested.
+
+## Language and style
+
+Write in a natural, human tone, while still keeping it professional. Avoid patterns that read as obviously AI-generated:
+
+- **No "lange tankestreker" as parenthetical asides** — do not use constructions like "dette er viktig – spesielt for bedriften – fordi …". Use commas, parentheses, or restructure the sentence instead. Also be critical about the use of colons.
+- **Avoid generic filler phrases** like "det er verdt å merke seg at", "i dagens landskap", or "dette understreker viktigheten av".
+- **Keep sentence rhythm varied** — mix short and long sentences. Uniform medium-length sentences with dashes signal generated text.
+- **Be direct** — prefer concrete language over vague hedging and qualifiers.
+
+## Quick check
+
+- Is the main point stated first?
+- Does each claim have a clear supporting reason?
+- Is each reason backed by data, theory, or comparison?
+- Are sources or references indicated where relevant?

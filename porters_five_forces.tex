@@ -1,0 +1,214 @@
+%─────────────────────────────────────────────────────────────────────────────
+%  Ekstern analyse – Porters Five Forces
+%  Droneleveringsindustrien, Ziplines etablering i det norske markedet
+%─────────────────────────────────────────────────────────────────────────────
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage[style=apa, backend=biber, autolang=none]{biblatex}
+
+\geometry{left=3cm, right=3cm, top=3cm, bottom=3cm, headheight=15pt}
+\setstretch{1.25}
+
+\definecolor{highred}{RGB}{220,80,80}
+\definecolor{medorange}{RGB}{240,160,60}
+\definecolor{lowgreen}{RGB}{80,170,100}
+\definecolor{tableheader}{RGB}{40,80,120}
+\definecolor{tablerow}{RGB}{235,241,248}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textit{Porters Five Forces – Droneleveringsindustrien}}
+\lhead{\textit{Markedsplan Zipline}}
+\cfoot{\thepage}
+
+\addbibresource{references.bib}
+
+%─────────────────────────────────────────────────────────────────────────────
+\begin{document}
+%─────────────────────────────────────────────────────────────────────────────
+
+\section{Bransjestrukturanalyse – Porters Five Forces}
+
+Porters rammeverk fastslår at en aktørs lønnsomhetspotensial bestemmes av fem
+konkurransekrefter, og at bransjens samlede fortjenestenivå settes av
+kreftenes styrke
+\parencite[35]{porter1980}. Analysen under anvender rammeverket på
+droneleveringsindustrien sett fra Ziplines posisjon i det norske dagligvare-%
+og
+restaurantmarkedet, og leses i sammenheng med PESTEL- og VRIO-analysen.
+
+\textbf{Droneleveringsindustrien i Norge kjennetegnes av høy
+konkurranseintensitet
+fra substitutter og moderate til høye inngangsbarrierer. Det strukturelle
+handlingsrommet er størst for kapitalsterke, regulatorisk forankrede
+førsteetablerere,
+og dette vinduet er tidsbegrenset.}
+
+\begin{table}[h!]
+\centering
+\caption{Oppsummering – Porters Five Forces, droneleveringsindustrien i Norge}
+\label{tab:five_forces}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{
+  >{\bfseries}p{5.2cm}
+  >{\centering\arraybackslash}p{2.5cm}
+  X
+}
+\toprule
+\rowcolor{tableheader}\color{white}Kraft &
+  \color{white}Styrke &
+  \color{white}Nøkkeldriver \\
+\midrule
+\rowcolor{tablerow}
+Trussel fra nye aktører    & \cellcolor{medorange} Moderat    & Høy
+kapitalterskel, men attraktivt for Big Tech \\
+Leverandørenes makt        & \cellcolor{medorange} Moderat    & Konsentrert
+batterimarked, spesialisert hardware \\
+\rowcolor{tablerow}
+Kundenes makt              & \cellcolor{highred}   Høy        & Null
+byttekostnad, mange substitutter \\
+Trussel fra substitutter   & \cellcolor{highred}   Høy        &
+Foodora/Wolt/Oda dekker allerede kjernebehovet \\
+\rowcolor{tablerow}
+Rivalisering i industrien  & \cellcolor{lowgreen}  Lav–moderat  & Aviant er
+etablert i Norge, men med liten skala; Wing og Amazon nærmer seg \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+%─────────────────────────────────────────────────────────────────────────────
+\section{Kraft 1 – Trussel fra nye aktører \normalfont\textit{(moderat)}}
+%─────────────────────────────────────────────────────────────────────────────
+
+For generelle aktører er inngangsbarrierene høye. Kapitalkrav i
+størrelsesorden
+100--300~MUSD, BVLOS-godkjenning fra Luftfartstilsynet under EUs U-space-%
+rammeverk
+\parencite{luftfartstilsynet2023} og vanskelig repliserbare læringseffekter
+fra autonom
+operasjon \parencite[7]{porter1980} utgjør alle betydelige hindre. Overfor
+ressurssterke
+teknologiselskaper er de likevel ikke tilstrekkelige. Wing (Alphabet) opererer
+allerede
+kommersielt i Finland og er dermed geografisk nær; Amazon Prime Air er FAA-%
+godkjent og
+planlegger europeisk ekspansjon \parencite{wing2024, amazonair2024}. Begge har
+kapital og
+eksisterende retailpartnerskap som gjør rask markedsinntreden mulig.
+\textit{Det avgjørende er derfor ikke barrierenes absolutte høyde, men
+førsteetableringsfortrinnet.}
+
+%─────────────────────────────────────────────────────────────────────────────
+\section{Kraft 2 – Leverandørenes forhandlingsmakt
+\normalfont\textit{(moderat)}}
+%─────────────────────────────────────────────────────────────────────────────
+
+Høyenergibatterier til langdistanse VTOL-operasjoner produseres av et fåtall
+kinesiske og koreanske produsenter, blant dem CATL, LG Energy Solution og
+Panasonic
+\parencite{bloombergnef2024}. Porter identifiserer slik konsentrasjon som en
+kilde til
+sterk leverandørmakt \parencite[27]{porter1980}. En vel så viktig driver i
+norsk kontekst
+er maktbalansen overfor innholdspartnere. Uten attraktive dagligvare- og
+restaurantpartnere som Oda, NorgesGruppen og restaurantkjeder har tjenesten
+begrenset
+verdi for sluttkunden. Ettersom slikt samarbeid ennå ikke er etablert i Norge,
+er det
+Zipline som trenger partnerne i forhandlingsfasen, ikke omvendt.
+
+%─────────────────────────────────────────────────────────────────────────────
+\section{Kraft 3 – Kundenes forhandlingsmakt \normalfont\textit{(høy)}}
+%─────────────────────────────────────────────────────────────────────────────
+
+Norske forbrukere møter ingen kontraktsmessige bindinger, ingen teknologisk
+lock-in og
+ingen nettverkseffekter som holder dem til én leveringsplattform.
+Byttekostnaden er i
+praksis null \parencite[24]{porter1980}. Kombinert med at betalingsvilje for
+sub-30-minutters dronelevering ennå er udokumentert i det norske markedet
+\parencite[7]{pfeifer2005}, begrenser dette Ziplines prisingsevne betydelig.
+Resultatene fra prosjektets spørreundersøkelse vil gi et første empirisk
+grunnlag for
+å estimere betalingsviljen og bør informere prismodellen direkte.
+
+%─────────────────────────────────────────────────────────────────────────────
+\section{Kraft 4 – Trussel fra substitutter \normalfont\textit{(høy)}}
+%─────────────────────────────────────────────────────────────────────────────
+
+Porter definerer et substitutt som et produkt som fyller samme funksjon for
+kjøperen
+\parencite[23]{porter1980}, her tilgang på mat og dagligvarer innen akseptabel
+tid.
+Foodora, Wolt og Oda løser allerede «last mile»-problemet
+\parencite{gevaers2011}
+til en pris markedet er villig til å betale, og dagligvarebutikker innen
+gangavstand
+dekker de akutte behovene. For forbrukere i tettbygde strøk, som utgjør en
+stor andel
+av Ziplines potensielle bykunder, er droneleveransens verdiproposisjon primært
+bekvemmelighet og tidsbesparelse, ikke tilgjengelighet. Inntil Zipline
+demonstrerer
+at 15-minutters levering er verdt en vesentlig høyere kostnad, er
+substituttenes
+pris-ytelsesforhold strukturelt overlegent.
+
+%─────────────────────────────────────────────────────────────────────────────
+\section{Kraft 5 – Rivalisering mellom eksisterende aktører
+\normalfont\textit{(lav–moderat)}}
+%─────────────────────────────────────────────────────────────────────────────
+
+Det norske droneleveringsmarkedet er ikke ubeskrevet. Aviant (Trondheim,
+grunnlagt
+2020) opererer sin Kyte-tjeneste kommersielt i Lillehammer og Røros med
+BVLOS-sertifisering, 17~km leveringsradius og partnere som ICA og Gausdal
+Landhandleri
+\parencite{aviant2024}. Aviant har imidlertid hentet totalt 7,7~MUSD mot
+Ziplines
+600~MUSD i siste runde alene, og har gjennomført i overkant av 500 leveranser.
+Rivaliseringstrykket fra Aviant er dermed reelt, men foreløpig begrenset av
+skala.
+Indirekte rivalisering fra Foodora, Wolt og Porterbuddy er høyere og mer
+umiddelbar,
+ettersom enhver vekst i Ziplines volum primært skjer på bekostning av disse.
+Etter hvert som EUs U-space-rammeverk liberaliseres ytterligere
+\parencite{euuas2021},
+vil også Wing og Amazon møte lavere barrierer. Samlet gir dette en
+rivaliseringsintensitet
+som er \textit{lav–moderat i dag og strukturelt stigende}.
+
+Den samlede kraftprofilen, med høy substituttrussel og sterk kundemakt på kort
+sikt og
+voksende inngangspress på lang sikt, gir et krevende men
+\textit{tidssensitivt}
+mulighetsvindu. En regulatorisk forankret førsteetablerer har her et
+midlertidig
+strukturelt fortrinn. Strategiske implikasjoner diskuteres i
+markedsstrategikapittelet.
+
+%─────────────────────────────────────────────────────────────────────────────
+\printbibliography[title={Referanseliste}]
+%─────────────────────────────────────────────────────────────────────────────
+
+\end{document}

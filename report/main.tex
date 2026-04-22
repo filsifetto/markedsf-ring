@@ -1,0 +1,31 @@
+\documentclass[12pt, twoside]{article}
+\usepackage{packages}
+
+\begin{document}
+\frontmatter
+\pagestyle{empty}
+\import{./}{title.tex}
+\pagestyle{fancy}
+
+\tableofcontents
+\listoftables
+
+\mainmatter
+
+\import{./Sections/}{01_Problembeskrivelse}
+\import{./Sections/}{02_Intern_analyse}
+\import{./Sections/}{03_Ekstern_analyse}
+\import{./Sections/}{04_SWOT}
+\import{./Sections/}{05_Malsetninger}
+\import{./Sections/}{06_Markedsstrategi}
+\import{./Sections/}{07_Aktivitetsprogram}
+\import{./Sections/}{08_Okonomisk_analyse}
+
+\newpage
+\printbibliography[heading=bibintoc, title={Referanser}]
+
+\addappendix
+\import{./Appendices/}{A_Sporreundersokelse}
+\import{./Appendices/}{B_Fokusgruppe}
+
+\end{document}
