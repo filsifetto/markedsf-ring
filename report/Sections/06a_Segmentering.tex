@@ -1,115 +1,232 @@
 \subsection{Segmentering}
 
-Segmenteringen tar utgangspunkt i tre variabler som til sammen avgjør hvilke
-kundegrupper som er både teknisk tilgjengelige, kommersielt attraktive og
-realistiske å konvertere.
+Formålet med markedssegmentering er å identifisere grupper av kunder som
+deler behov, ønsker eller atferd, og som reagerer tilstrekkelig likt på
+et markedstilbud til at det er meningsfullt å rette markedsføringen mot
+dem som en samlet enhet \parencite{kotlerkellerchernev2022}. For Zipline
+er dette særlig relevant fordi selskapet møter et marked med store
+interne forskjeller i både kundeverdi, konkurranseintensitet og
+regulatorisk kompleksitet. Før man velger hovedsegmenter er det derfor
+nødvendig å vurdere hvilke segmenteringsvariabler som best fanger opp
+disse forskjellene.
 
-\subsubsection{V1 -- Geografisk-teknisk tilgjengelighet}
+\textcite{kotlerkellerchernev2022} deler forbrukermarkedet inn i fire
+hovedtyper segmenteringsvariabler. Geografiske variabler handler om
+inndeling etter region, by, bydel, forstad eller distrikt, og benyttes
+når kundeverdi, konkurranse og tilgjengelighet varierer i rom.
+Demografiske variabler omfatter alder, inntekt, utdanning,
+husholdningstype og livsfase, og er populære fordi de er lett målbare
+og ofte korrelerer med forbrukerbehov. Psykografiske variabler fanger
+opp livsstil, verdier, personlighet og holdninger, og forklarer hvorfor
+to kunder med like demografiske kjennetegn likevel kan ha ulike
+preferanser. Atferdsmessige variabler beskriver hvordan kunder faktisk
+bruker eller forholder seg til en kategori eller et produkt, herunder
+brukssituasjon, brukshyppighet, fordelene de søker og lojalitet.
 
-Formålet er å identifisere hvilke kundesegmenter Ziplines plattform kan
-betjene, og dermed avgrense det reelle markedet fra det teoretiske. For
-dronelevering er dette en forutsetningsvariabel fremfor en
-prioriteringsvariabel. Et segment med høy kjøpekraft og sterk motivasjon er
-irrelevant dersom de tekniske leveringsforholdene ikke er til stede.
-Variabelen operasjonaliseres gjennom boligtype, tomtestørrelse og avstand til
-eksisterende matleveringsdekning. Eneboliger og småhus med uteareal på minimum
-én meter i diameter er det tekniske minstekravet for Zipline, mens avstand til
-nærmeste Wolt- eller Foodora-sone brukes som indikator på udekket
-etterspørsel. Geografi fungerer i dette tilfellet som en indikator for flere
-relevante forhold samtidig. Dersom man bor i et villastrøk i Bærum, impliserer
-det med høy sannsynlighet egnet boligtype og topografiske forhold som
-forsterker dronens hastighetsfordel over tradisjonell billevering.
+Et godt segment bør samtidig oppfylle visse kvalitetskrav.
+\textcite{kotlerkellerchernev2022} fremhever at effektive segmenter må
+være målbare, substansielle, tilgjengelige, differensierbare og
+handlingsorienterte. Dette innebærer at segmentet må kunne beskrives
+tallmessig, ha stort nok volum til å være lønnsomt, kunne nås gjennom
+et praktisk tilbud, skille seg tydelig fra andre segmenter, og la seg
+utløse gjennom konkrete markedsaktiviteter. Disse kriteriene er viktige
+når Zipline skal vurderes, fordi selskapets teknologi både har
+geografiske begrensninger og møter ulik konkurranse i forskjellige
+områder.
 
-\subsubsection{V2 -- Verdipotensial}
+\subsubsection{Valg av segmenteringsvariabler}
 
-Formålet er å identifisere og prioritere de kundesegmentene som forventes å
-generere høyest lønnsomhet over tid, basert på estimert livstidsverdi fremfor
-enkeltstående bestillinger \parencite[11]{pfeifer2005}. For Zipline måles
-dette ideelt sett gjennom ordrefrekvens, ordreverdi og betalingsvilje. Dersom
-fullstendig data ikke er tilgjengelig, benyttes inntektsnivå og eksisterende
-forbruksmønster på matleveringstjenester som alternative indikatorer. Det
-legges til grunn en hypotese om at husholdninger med høy medianinntekt,
-kombinert med tidspresset livssituasjon, vil ha høyere ordrefrekvens og lavere
-prissensitivitet enn gjennomsnittsforbrukeren. I segmenter der Zipline er det
-eneste reelle leveringsalternativet, vil betalingsviljen sannsynligvis
-overstige den som observeres i markeder med konkurrerende tjenester.
+For Zipline fremstår geografi som den mest relevante hovedvariabelen,
+fordi kundeverdi, konkurranseintensitet og regulatoriske barrierer
+varierer tydelig mellom urbane områder, forstadsområder og distrikter.
+Dette er særlig viktig fordi Zipline ikke går inn i et tomt marked,
+men må vurderes opp mot eksisterende substitutter som allerede løser
+sisteleddet i leveransen for mange kunder. I tråd med analysen av
+konkurranseforholdene er det derfor mer relevant å segmentere ut fra
+hvor og hvordan behovet oppstår, enn å starte med brede psykografiske
+grupper alene. I urbane områder er substituttene sterkest, fordi
+Foodora, Wolt, Oda og andre eksisterende leveringsformer allerede
+dekker behovet for rask tilgang til mat og dagligvarer. I andre
+geografiske områder er denne substitusjonstrusselen svakere, og Zipline
+kan i større grad løse et faktisk tilgjengelighetsproblem fremfor bare
+å tilby økt bekvemmelighet.
 
-\subsubsection{V3 -- Adopsjonsbarriere overfor ny leveringsteknologi}
+Demografiske, psykografiske og atferdsmessige variabler er fortsatt
+relevante, men brukes som støttevariabler innenfor de geografiske
+segmentene. Demografisk sett kan inntekt og husholdningsstruktur si noe
+om betalingsvilje og etterspørsel etter hjemleveringstjenester.
+Psykografiske forhold som teknologiinteresse, holdninger til innovasjon
+og miljøbevissthet kan påvirke hvor attraktiv tjenesten oppleves, mens
+atferdsmessige forhold som brukssituasjon og brukshyppighet er sentrale
+for å forstå hva slags leveranser Zipline faktisk konkurrerer om,
+enten det er planlagte handleturer, impulskjøp eller akutte behov.
+Disse variablene er likevel vanskeligere å bruke som selvstendige
+hovedsegmenter, både fordi de er mindre direkte koblet til de
+strukturelle forskjellene i markedet og fordi de er krevende å nå
+gjennom distinkte markedsaktiviteter. Dette ligner logikken i
+Dr.Dropin-eksempelet, der segmenteringen først begrunnes ut fra hvilke
+variabler som faktisk skaper forskjeller i kundeverdi og strategisk
+gjennomførbarhet.
 
-Formålet er å identifisere hvilke kundesegmenter det er realistisk å
-konvertere til Ziplines app-baserte direktekanal, gitt at dronelevering
-fortsatt er et nytt konsept for norske forbrukere \parencite{rogers2003}.
-Variabelen skiller mellom tre grupper. Den første består av brukere med lav
-adopsjonsbarriere, som allerede er aktive på Wolt eller Foodora og åpne for ny
-leveringsteknologi. Den andre består av brukere med høy barriere, som er lite
-digitalt aktive og skeptiske til ubemannede systemer. Den tredje er et
-påvirkelig mellomsjikt. Denne identifikasjonen er kritisk ettersom målet ikke
-er å nå alle teknisk tilgjengelige husholdninger, men å prioritere de
-segmentene der kommunikasjons- og lanseringstiltak faktisk kan endre atferd.
-Variabelen operasjonaliseres gjennom alder, eksisterende digital aktivitet og
-kjennskap til matleveringstjenester.
+\subsubsection{Urbane områder}
 
-\subsubsection{Segment 1: Velstående villaforsteder}
+Urbane områder er i utgangspunktet attraktive fordi de har høy
+befolkningstetthet og stort kundegrunnlag. Demografisk er segmentet
+også interessant. Vestre Aker og Ullern har Oslos høyeste
+gjennomsnittsinntekt på bydelsnivå, mens Bygdøy i bydel Frogner har
+landets høyeste medianinntekt for barnefamilier
+\parencite{omholt2023_ssb, oslo_kommune_inntekt}. Høy kjøpekraft kan i
+prinsippet øke betalingsviljen for premium-tjenester. Likevel fremstår
+segmentet som det minst attraktive på kort sikt. Hovedårsaken er at
+substituttene er sterkest nettopp her. I byene finnes det allerede
+flere aktører som tilbyr rask sisteleddlevering, og kundene har lave
+byttekostnader. Dermed må Zipline ikke bare introdusere en ny
+teknologi, men også bevise at denne teknologien gir vesentlig høyere
+verdi enn løsninger kundene allerede kjenner og bruker. Porters
+analyse viser nettopp at substituttrusselen er høy, og at
+verdiproposisjonen i tettbygde områder derfor primært blir
+bekvemmelighet og tidsbesparelse, ikke tilgjengelighet.
 
-Dette segmentet scorer høyt på alle tre segmenteringsvariabler og er derfor
-det mest attraktive primærmarkedet for Zipline i Norge. Den geografisk-%
-tekniske tilgjengeligheten er svært god. Store tomter på 500 til 2000
-kvadratmeter i områder som Lommedalen, Hosle, Jar og Nesøya gir gode fysiske
-forutsetninger for dronelevering. Verdipotensialet er tilsvarende høyt,
-ettersom husholdningene befinner seg blant Norges rikeste delområder målt ved
-medianinntekt. Adopsjonsbarrieren vurderes som lav, ettersom målgruppen består
-av tidspressede toinntektsfamilier i alderen 30--50 år med urbane matvaner og
-høy digital aktivitet. De er allerede vant til appbasert matlevering via Wolt
-og Foodora, men har begrenset faktisk tilbud i sitt nærområde.
+Regulatorisk er urbane områder også mest krevende. Tidligere analyser
+viser at norsk dronevirksomhet møter betydelige barrierer knyttet til
+BVLOS-drift, luftrom og godkjenninger, og disse utfordringene blir
+særlig store i tettbygde byområder \parencite{stortingsmelding2025}. I
+tillegg er det fysiske landskapet begrensende. Tett bebyggelse, liten
+tilgang til åpne landingsflater og mange tredjepersoner under
+flygetraseen gjør droneleveranse operativt vanskelig. Selv om urbane
+kunder trolig er relativt teknologiinteresserte, er ikke dette i seg
+selv nok til å gjøre segmentet attraktivt. I et marked med sterke
+substitutter må teknologi oppleves som meningsfull, ikke bare ny. Det
+er derfor usikkert om teknologiinteresse alene kan drive adopsjon i
+byene. Også grønn utvikling kan ha begrenset differensierende effekt i
+dette segmentet. Bærekraft kan styrke Ziplines omdømme, men når kunden
+allerede har raske og tilgjengelige alternativer, er det ikke sikkert
+at miljøgevinst alene er nok til å utløse bruk. I urbane områder
+fremstår derfor Zipline mer som et langsiktig vekstsegment enn som et
+naturlig startpunkt.
 
-Verdiforslaget er særlig sterkt fordi luftlinjeavstanden til
-restaurantklyngene i Sandvika og Lysaker er 5 til 10 kilometer, mens bilveien
-gjennom E18 og E16 i rushtiden gjerne tar 30 til 45 minutter. Den
-regulatoriske situasjonen forsterker argumentet ytterligere, ettersom U-space
-sandboxen i Bærum allerede er operativ og gir Zipline et forsprang som ingen
-annen norsk lokasjon kan tilby på tilsvarende tidspunkt. Segmentet vurderes
-som høyeste prioritet for B2C-lansering.
+\subsubsection{Forstadsområder}
 
-\subsubsection{Segment 2: Geografisk isolerte}
+Forstadsområder fremstår som det mest balanserte segmentet. Her
+finnes det fortsatt et betydelig kundegrunnlag, men substituttene er
+svakere enn i sentrum. Samtidig er reguleringsrisikoen og den
+operative kompleksiteten lavere enn i de mest tettbygde byområdene.
+Dette gjør forstadsområder mer relevante for Zipline enn urbane
+sentrumsområder, fordi selskapet her kan tilby en kombinasjon av rask
+levering og faktisk forbedret tilgjengelighet. I motsetning til
+sentrum, der eksisterende leveringsaktører ofte allerede dekker behovet
+godt, kan Zipline i forstadsområder dekke flere situasjoner der dagens
+tilbud er mindre fleksible eller mindre lønnsomme for eksisterende
+budtjenester.
 
-Nesodden skiller seg ut som et område med høy teknisk og geografisk egnethet
-for dronelevering, samtidig som dagens matleveringstilbud er fraværende. Dette
-segmentet er geografisk-teknisk velegnet, med høy andel eneboliger og romslige
-utearealer som legger til rette for dronelevering. Det som skiller Nesodden
-fra de øvrige segmentene er imidlertid ikke graden av egnethet, men fraværet
-av andre alternativer. Kommunens 21\,000 innbyggere lever med urbane
-forbruksvaner og inntekter over landsgjennomsnittet, men er fysisk adskilt fra
-Oslo. Veiforbindelsen er 45 kilometer lang gjennom Drøbak, mens
-luftlinjeavstanden til Lysaker er knappe 5 til 8 kilometer. Verken Wolt eller
-Foodora dekker kommunen i dag, og tradisjonell billevering er kommersielt lite
-gunstig.
+Den geografisk-tekniske tilgjengeligheten er også svært god i dette
+segmentet. Områder som Lommedalen, Hosle og Jar i Bærum, samt Nesøya i
+Asker, er preget av eneboligbebyggelse på store villatomter. Bærum
+kommunes veileder for tomtestørrelse og utnyttingsgrad krever minimum
+800 kvadratmeter for enebolig, og opererer med en hovedregel om
+maksimalt 20 prosent bebygd areal (BYA) nettopp for å bevare de åpne
+villaområdene \parencite{baerum_kommune_tomt}. Tilsvarende
+minimumskrav gjelder i Asker, og konkrete eiendomsannonser fra disse
+områdene viser tomter fra rundt 600 til over 2\,000 kvadratmeter
+\parencite{nordvik2024_eiendom}. Slike tomtearealer gir gode fysiske
+forutsetninger for dronelevering, fordi det finnes tilstrekkelig åpen
+plass til trygg landing, samtidig som avstandene fra et
+distribusjonssenter fortsatt er overkommelige for Ziplines operative
+rekkevidde.
 
-Verdipotensialet er høyt gitt inntektsnivået og den udekte etterspørselen, og
-den tilnærmet monopollignende posisjonen gir grunnlag for premiumprising.
-Adopsjonsbarrieren vurderes som moderat lav. Befolkningen har en urban og
-pendlerpreget profil med høy digital aktivitet og god kjennskap til
-matleveringstjenester, til tross for manglende tilgang i dag. Segmentet egner
-seg godt for en tidlig lansering med høy kommunikasjonsverdi, og er strategisk
-viktig for å demonstrere droneleveringens unike egenskaper overfor både
-forbrukere og regulatorer.
+Verdipotensialet er tilsvarende høyt. Husholdningene i disse områdene
+befinner seg blant Norges rikeste delområder målt ved medianinntekt.
+Ifølge SSBs oversikt over inntekt på delområdenivå rangerer
+Lommedalen, Nesøya, Hosle sør og Jar alle blant de fem delområdene med
+høyest medianinntekt i hele landet \parencite{omholt2023_ssb}. Høy
+kjøpekraft øker sannsynligheten for at segmentet er villig til å
+betale en premium for raskere eller mer fleksibel levering, og
+kombinert med god geografisk-teknisk tilgjengelighet gjør dette
+segmentet både målbart, substansielt og tilgjengelig i
+\textcite{kotlerkellerchernev2022} sin forstand.
 
-\subsubsection{Segment 3: Eldre velstående}
+Segmentet passer også godt med Ziplines interne styrker. Internanalysen
+peker på at selskapets teknologiske kompetanse, korte leveringstid og
+bærekraftsprofil er sentrale styrker, men også at løsningen har
+begrensninger knyttet til vekt, radius og kommersiell kompleksitet.
+Nettopp derfor er forstadsområder attraktive, fordi de gir bedre
+strategisk samsvar mellom det Zipline faktisk kan levere og det
+markedet etterspør. Teknologiinteresse er sannsynligvis også relevant
+her, men mer som en forsterkende faktor enn som hovedgrunnlag for
+segmentet. Forbrukere i forstadsområder kan være åpne for ny teknologi,
+men adopsjon vil fortsatt avhenge av at tjenesten oppleves som
+praktisk, trygg og tidsbesparende. Når det gjelder grønn utvikling, er
+det også rimelig å anta at bærekraft kan ha en viss betydning i dette
+segmentet, særlig fordi tjenesten både kan redusere utslipp og
+samtidig gi merverdi i form av raskere levering. Her virker
+miljøargumentet sterkere enn i urbane områder, fordi det kan kombineres
+med tydelig funksjonell nytte, ikke bare symbolsk verdi.
+Forstadsområder fremstår derfor som segmentet der Ziplines styrker
+best kan omsettes til et troverdig og differensiert tilbud.
 
-Den geografisk-tekniske tilgjengeligheten er god i dette segmentet.
-Eneboligandelen er på opptil 27 prosent, og terrenget forsterker dronens
-relative fordel fremfor å hemme den. Holmenkollen og Slemdal ligger 300 til
-500 meter over havet med bratte veier som gjør billevering fra
-lavlandsrestauranter tidkrevende. Dronen ignorerer topografi fullstendig og
-leverer på 5 til 8 minutter der biler bruker 20 til 30 minutter.
-Verdipotensialet er tilsvarende høyt. Vestre Aker og Ullern har Oslos høyeste
-gjennomsnittsinntekt, og Ziplines erfaringer fra Dallas--Fort Worth bekrefter
-at seniorer og personer med redusert mobilitet utgjør en kjernegruppe fordi
-dronelevering eliminerer behovet for bil eller fysisk mobilitet
-\parencite{dronexl2026}.
+\subsubsection{Distrikter}
 
-Adopsjonsbarrieren er den viktigste differensiatoren for dette segmentet.
-Aldersgruppen over 67 år er historisk sett mer forsiktig med å ta i bruk nye
-digitale tjenester \parencite{ssb2023}, noe som innebærer at konvertering
-krever en mer tilpasset innføringsstrategi enn for de øvrige segmentene.
-Segmentet vurderes likevel som verdifullt og bør prioriteres som
-sekundærmarked, grunnet høy betalingsvilje og stort behov.
+Distriktene er strategisk svært interessante fordi Zipline her kan
+løse et mer grunnleggende logistikkproblem enn i byene. I slike
+områder er tilgjengelighet ofte viktigere enn ren bekvemmelighet.
+Dette gjør at substituttene er svakere, og at Zipline i større grad
+kan dekke behov som ikke allerede er godt løst av eksisterende
+last-mile-aktører. Fra et konkurranseperspektiv er dette derfor det
+segmentet der Zipline tydeligst skiller seg fra Foodora, Wolt og
+lignende tjenester, fordi disse i liten grad er bygget for spredt
+bosetting og større avstander.
+
+Samtidig bør man være mer forsiktig i vurderingen av betalingsvilje.
+Det er plausibelt at behovet er høyt i distriktene, men det betyr ikke
+automatisk at betalingsviljen også er høy. Det tryggeste er derfor å
+skrive at betalingsviljen er usikker. Verdien av tjenesten kan være
+høy, men denne verdien må også omsettes i faktisk betalingsvilje hos
+kunden. Her blir problemdefinisjonen i oppgaven viktig, siden hele
+spørsmålet handler om hvorvidt løsningen oppleves som relevant og
+verdiskapende sammenlignet med eksisterende alternativer. Demografisk
+er distriktene også mer heterogene enn forstadsområdene, med lavere
+gjennomsnittsinntekt og mindre konsentrasjon av kjøpekraft
+\parencite{omholt2023_ssb}. Dette kan også gjøre segmentet mindre
+attraktivt enn det umiddelbart virker.
+
+Når det gjelder teknologiinteresse og grønn utvikling i distriktene,
+er det etter min vurdering ikke sikkert at grønnhet er like viktig som
+i mer urbane segmenter. Det betyr ikke at bærekraft er irrelevant, men
+at den trolig spiller en annen rolle. I distriktene vil funksjonell
+nytte sannsynligvis veie tyngre enn symbolsk miljøgevinst. Kunder kan
+være positive til grønne løsninger, men det som først og fremst gjør
+Zipline attraktivt her, er at tjenesten kan gi raskere og mer
+pålitelig levering der andre tilbud er svake. Den grønne profilen blir
+dermed et tilleggsmoment som styrker tilbudet, ikke nødvendigvis
+hoveddriveren for etterspørsel. Dette er også i tråd med tanken om at
+kunder først velger løsninger som løser et konkret behov, ikke bare
+fordi de fremstår som teknologisk avanserte eller bærekraftige.
+
+\subsubsection{Valg av hovedsegmenter}
+
+På bakgrunn av analysene fremstår forstadsområder som det mest
+hensiktsmessige hovedsegmentet for Zipline i en norsk etableringsfase.
+Dette segmentet kombinerer et relativt stort kundegrunnlag med
+svakere substitutter enn i sentrum, samtidig som reguleringsmessige og
+operative barrierer er mindre krevende enn i urbane kjerner.
+Forstadsområder gir dermed best balanse mellom attraktivitet og
+gjennomførbarhet, og segmentet passer godt med både Ziplines styrker
+og begrensninger slik disse kommer frem i SWOT, internanalysen og
+konkurranseanalysen. Segmentet oppfyller også
+\textcite{kotlerkellerchernev2022} sine krav til effektive segmenter,
+ved at det er målbart gjennom SSB-data på inntekt og husholdninger,
+substansielt i form av betydelig kjøpekraft, tilgjengelig innenfor
+rimelig operativ rekkevidde fra et sentralt distribusjonspunkt, og
+differensierbart fra både urbane sentrumsområder og spredt bebygde
+distrikter.
+
+Distriktene bør vurderes som sekundært segment. Her er den
+funksjonelle nytten høy, og Zipline kan i større grad tilby noe
+markedet faktisk mangler. Samtidig er det større usikkerhet knyttet
+til volum og betalingsvilje, noe som gjør segmentet attraktivt, men
+mer usikkert enn forstadsområdene. Urbane sentrumsområder bør derimot
+ikke prioriteres i første fase. Selv om segmentet er stort og
+teknologisk interessant, er substituttrusselen høyest der,
+reguleringen mest krevende, og forskjellen mellom Zipline og
+eksisterende løsninger minst tydelig. På kort sikt er derfor
+bysentrum et mindre robust valg enn både forsteder og distrikter.
