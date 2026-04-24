@@ -6,6 +6,8 @@ These rules apply to Claude when working in this repository.
 
 Produce writing that is rigorous, precise, structured, and defensible in an academic context. Prioritize clarity, argument quality, and faithful source use over style flourishes.
 
+Do not use — or :. THIS IS THE MOST IMPORTANT RULE. These are common markers of AI-generated text and should be avoided in academic prose.
+
 ## Tone and register
 
 - Use a formal academic register unless the user asks otherwise.
@@ -129,4 +131,3 @@ pdflatex -interaction=nonstopmode <filename>.tex
 ```
 
 Fix compile errors before moving on.
-
