@@ -1,25 +1,44 @@
 \section{Ekstern analyse}
 
-Den eksterne analysen ser på hvilke makroforhold og bransjestrukturelle
+Den eksterne analysen ser på hvilke makroforhold og strukturelle
 krefter som former Ziplines handlingsrom i det norske markedet. PESTEL brukes
 til å kartlegge makroomgivelsene, mens Porters Five Forces analyserer
-konkurranseforholdene innenfor selve droneleveringsindustrien.
+konkurranseforholdene innenfor selve droneleveringsindustrien. PESTEL er et
+etablert rammeverk i strategisk markedsanalyse for å systematisere
+makromiljøet langs politiske, økonomiske, sosiale, teknologiske,
+miljømessige og juridiske dimensjoner \parencite{kotlerkellerchernev2022}.
+Porters teori om konkurransekrefter beskriver i sin tur hvordan en bransjes
+lønnsomhetspotensial settes av samspillet mellom fem strukturelle krefter,
+og at fortjenestenivået bestemmes av deres samlede styrke
+\parencite{porter1980}. De to rammeverkene utfyller hverandre ved å belyse
+henholdsvis ytre rammebetingelser og indre konkurransedynamikk.
 
 \subsection{PESTEL}
 
 \subsubsection{Politiske faktorer}
 
-Norges politikk for digitalisering og grønn transport tilsier at myndighetene
-vil være positivt innstilt til innovativ dronelogistikk, men det regulatoriske
-landskapet er komplekst. Et konkret tegn på politisk støtte er at regjeringen
-i 2025 la fram Norges første stortingsmelding om droner og samtidig bevilget
-50 millioner kroner til testing av null- og lavutslippsluftfart
-\parencite{stortingsmelding2025}. Norge følger også EUs regelverk gjennom EØS-%
-avtalen, noe som gir forutsigbarhet, men betyr samtidig at Norge ikke har
-direkte påvirkningskraft på regelverksutviklingen i EU. Selskapet må innhente
-BVLOS-tillatelse (Beyond Visual Line of Sight) fra Luftfartstilsynet, da
-dronene opererer utenfor pilotens synsrekkevidde
-\parencite{luftfartstilsynet2023}. 
+Norges politikk for digitalisering og miljøvennlig transport tilsier at
+myndighetene kan være positivt innstilt til dronelogistikk, men
+politiske aktører kan motsette seg automatisering som erstatter sjåfør- og
+budjobber. Den politiske dimensjonen i PESTEL omfatter blant annet
+myndighetenes strategiske satsinger, offentlige bevilgninger og graden av
+støtte til utvalgte sektorer \parencite{kotlerkellerchernev2022}. På
+droneområdet er den politiske støtten i Norge konkret. Regjeringen la i
+2025 fram Norges første stortingsmelding om droner og bevilget samtidig 50
+millioner kroner til testing av null- og lavutslippsluftfart
+\parencite{stortingsmelding2025}. Statsbudsjettet for 2025 viderefører
+prioriteringen av samferdsels- og luftfartsområdet gjennom dedikerte
+bevilgninger til testordninger og utviklingsmiljøer for ubemannet luftfart
+\parencite{prop1s2024}. Samtidig har norsk politikk en sterk tradisjon for
+å verne om arbeidsplasser i transport- og varehandelsnæringen.
+Fellesforbundet har i sin samferdselspolitiske landsmøteuttalelse eksplisitt
+krevd at digitalisering og automatisering i sektoren må reguleres slik at
+hensynet til arbeidsliv, kompetanse og sikkerhet ivaretas
+\parencite{fellesforbundet2023_samferdsel}. Politiske faktorer trekker
+dermed i to retninger og gjør Zipline avhengig av både fortsatt
+regjeringsstøtte til ubemannet luftfart og av tett dialog med fagbevegelsen
+om sysselsettingseffektene for å bevare politisk legitimitet over tid.
+
 
 \subsubsection{Økonomiske faktorer}
 
@@ -55,24 +74,23 @@ særlig i tettbygde strøk.
 
 Norge tilbyr et teknologisk gunstig operasjonsmiljø for dronelogistikk, men
 den spesialiserte infrastrukturen for ubemannet luftfart er fortsatt under
-oppbygging. Mobildekningen er blant de beste i Europa. Ved utgangen av 2024
+oppbygging. Mobildekningen er blant de beste i Europa \parencite{nkom2025_mobildekning}. Ved utgangen av 2024
 hadde 99{,}7~\% av husstandene grunnleggende 5G-dekning, mens om lag 70~\% av
-landarealet var dekket av 5G-signal \parencite{nkom2024_5g}. Høy dekning og
-lav ventetid er en forutsetning for BVLOS-operasjoner, som avhenger av
-kontinuerlig telemetri og sanntids posisjonsdeling mellom drone og
-fjernpilot. På bransjespesifikk infrastruktur følger Norge EUs U-space-%
-rammeverk, og forskrift om U-space og iAIT trådte i kraft høsten 2024
-\parencite{lovdata2024_uspace}. Forskriften etablerer et digitalt
-lufttrafikksystem der droner i definerte soner må dele posisjon og innhente
-flygetillatelse, og testområder i Bærum og Røros er under oppstart mens de
-første sertifiserte sonene ventes i 2026
-\parencite{luftfartstilsynet2024_uspace}. Full utrulling vil være en
-forutsetning for skalerbar dronetrafikk i tettbygde strøk, noe som innebærer
-at videre teknologisk og regulatorisk modning gjenstår før bransjen kan
-operere i full skala. Kombinert med offentlige satsinger på test- og
-utviklingsmiljøer for ubemannet luftfart \parencite{stortingsmelding2025} gir
-dette et teknologisk økosystem som favoriserer aktører som etablerer seg
-tidlig. 
+landarealet var dekket av 5G-signal \parencite{nkom2024_5g}. 
+Høy dekning og lav ventetid er en forutsetning for BVLOS-operasjoner, som
+avhenger av kontinuerlig telemetri og sanntids posisjonsdeling mellom drone
+og fjernpilot \parencite{easa2021_c2}.
+Zipline er avhengig av høypresis satellittnavigasjon (GNSS) med
+RTK-korreksjon (Real-Time Kinematic) for å oppnå centimeternøyaktighet
+ved pakkeslipp \parencite{novatel2018_zipline}. Norge har en moden
+GNSS-infrastruktur med tilgang til både GPS og det europeiske
+Galileo-systemet, og Kartverkets posisjonstjeneste CPOS leverer
+nasjonal centimeternøyaktig data i sanntid
+\parencite{kartverket_cpos}. Dette gir Zipline et godt teknologisk
+grunnlag for droneleveranser i Norge. Samtidig er nordlige breddegrader mer
+eksponert for romvær og ionosfæriske forstyrrelser som kan svekke
+eller forstyrre GNSS-signaler, noe zipline må ta hensyn til.
+\parencite{jordensmagnetfelt_romvaer}.
 
 \subsubsection{Miljømessige faktorer}
 
@@ -85,8 +103,8 @@ derfor være betydelig. Også sammenlignet med sykkelbud tilbyr Zipline et mer
 skalerbart lavutslippsalternativ over lengre distanser og i krevende terreng.
 Støy kan likevel utgjøre en miljøutfordring, særlig i naturområder og
 boligstrøk. Zipline forsøker imidlertid å redusere denne belastningen, som
-nevnt tidligere. I tillegg viser forskning at droner kan forstyrre dyrelivet,
-og særlig fugler, som kan oppfatte dronene som rovfugler og reagere med
+nevnt tidligere. I tillegg viser studier at droner kan forstyrre dyrelivet,
+som kan oppfatte dronene som rovfugler og reagere med
 stress, fluktatferd eller direkte angrep mot dronen \parencite{afridi2025}.
 Dette gjør det viktig at Zipline planlegger flyruter som unngår hekkeområder
 og sårbar natur, særlig i Norges mange verneområder og langs kjente
@@ -99,16 +117,44 @@ tradisjonell logistikk.
 Det juridiske rammeverket representerer en operasjonell risiko ved en
 inntreden i det norske markedet. EUs regelverk, som Norge følger gjennom EØS-%
 avtalen, skiller juridisk mellom autonome og ikke-autonome droner
-\parencite{euuas2021}. Ettersom Zipline benytter en fjernpilot (RPIC) med
-kommando over dronen, klassifiseres den som ikke-autonom og underlegges et
-mildere regelverk. Videre stiller norsk personvernlovgivning strenge krav til
-innsamling, lagring og sletting av data fra dronenes kamera og sensorer
-\parencite{personopplysningsloven2018}.
+\parencite{euuas2021}. EØS-tilknytningen gir forutsigbarhet for aktører som
+opererer på tvers av landegrensene, men innebærer samtidig at Norge ikke
+har direkte påvirkningskraft på regelverksutviklingen i EU. Ettersom Zipline
+benytter en fjernpilot (RPIC) med kommando over dronen, klassifiseres den
+som ikke-autonom og underlegges et mildere regelverk. Selskapet må likevel
+innhente BVLOS-tillatelse (Beyond Visual Line of Sight) fra
+Luftfartstilsynet, ettersom dronene opererer utenfor pilotens
+synsrekkevidde \parencite{luftfartstilsynet2023}. Videre stiller norsk
+personvernlovgivning strenge krav til innsamling, lagring og sletting av
+data fra dronenes kamera og sensorer \parencite{personopplysningsloven2018}.
 Ansvarsforholdet ved eventuell skade på person eller eiendom er juridisk
 komplekst, og norsk produktansvarslov stiller klare krav til
 erstatningsansvar. Europeisk regelverk krever dessuten at droneoperatører
 tegner ansvarsforsikring \parencite{eu785_2004}, noe som kan utgjøre en
 merkbar kostnad.
+
+\subsection{Strategisk implikasjon av PESTEL}
+Bærekraftsprofilen bør brukes aktivt overfor myndighetene for å sikre
+offentlig medfinansiering av distribusjonssentraler og pilotprosjekter.
+Kombinasjonen av nullutslippsdrift og en tilnærmet fornybar norsk
+strømmiks treffer norske klimamål direkte. Dette argumentet veier
+tyngre overfor politiske beslutningstakere enn overfor sluttkunder som
+primært prioriterer pris og leveringstid \textbf{(SPØRREUNDERSØKELSE KILDE)}.
+Regulatorisk bør Zipline utnytte at Aviant allerede har modnet
+BVLOS-rammeverket i Norge, og søke godkjenninger inn under den
+eksisterende infrastrukturen. 
+Dette reduserer både tidsbruk og risiko i
+godkjenningsprosessene. Samtidig må selskapet tidlig forholde seg til
+personvernlovgivningen og forsikringskravene for ubemannet luftfart,
+ettersom begge må være avklart før kommersiell drift kan settes i gang.
+Operasjonelt må Zipline tette tre konkrete kunnskapshull før skaleringen
+kan starte. Vinterdriften må valideres under reelle norske forhold,
+GNSS-løsningen må hardføres mot ionosfæriske forstyrrelser på nordlige
+breddegrader, og ruteplanleggingen må eksplisitt unngå hekkeområder og
+verneområder. Disse oppgavene bør løses parallelt med
+markedsetableringen, ettersom hver av dem kan utløse
+regulatoriske eller omdømmemessige tilbakeslag som vanskelig kan
+reverseres.
 
 \subsection{Porters Five Forces}
 
@@ -233,26 +279,22 @@ rammeverk liberaliseres ytterligere \parencite{euuas2021}, vil også Wing og
 Amazon møte lavere barrierer. Samlet gir dette en rivaliseringsintensitet som
 er lav til moderat i dag og strukturelt stigende.
 
-\subsection{Strategisk implikasjon}
-Samlet peker PESTEL- og Porter-analysene mot et krevende, men tidsbegrenset
-mulighetsvindu for Zipline i Norge. På makronivå er forholdene overveiende
-gunstige. Norsk politikk støtter grønn luftmobilitet gjennom dedikerte
-bevilgninger og regelverksutvikling \parencite{stortingsmelding2025}, det
-høye norske lønnsnivået forsterker den strukturelle kostnadsfordelen ved
-autonom drift \parencite{ssb2024}, og digital infrastruktur som 5G er
-tilstrekkelig utbygd til å støtte BVLOS-operasjoner \parencite{nkom2024_5g}.
-Bransjebildet gir en klar motvekt. Substituttene Foodora, Wolt og Oda dekker
-allerede last mile-behovet til en pris markedet aksepterer, og kombinert
-med tilnærmet null byttekostnad gir det norske forbrukere betydelig
-forhandlingsmakt. Rivaliseringen fra Aviant er foreløpig begrenset av
-skala, mens Wing og Amazon utgjør et latent inntredepress som vil tilta når
-U-space- og BVLOS-regelverket modner \parencite{euuas2021,
-lovdata2024_uspace}. Den strategiske implikasjonen er at Zipline bør
-konsentrere seg om geografiske segmenter der substituttene fungerer dårlig,
-særlig distriktsområder med spredt bosetting der rask levering har høy reell
-verdi, og samtidig bruke bærekraftsprofilen aktivt overfor politiske
-beslutningstakere for å sikre offentlig finansiering i etableringsfasen.
-Tidsvinduet som lav lokal rivalisering og politisk velvilje åpner er
-midlertidig, og førsteetablererfortrinnet avhenger av at regulatorisk
-arbeid og partnerskap igangsettes tidlig. Strategiske valg konkretiseres
-videre i markedsstrategikapittelet.
+\subsection{Strategisk implikasjon av Porter}
+Bransjebildet gir en klar motvekt til det gunstige makrobildet og peker mot
+et tidsbegrenset mulighetsvindu. Substituttene Foodora, Wolt og Oda dekker
+allerede behovet for levering på siste mil til en pris markedet aksepterer.
+Kombinert med tilnærmet null byttekostnad gir det norske forbrukere
+betydelig forhandlingsmakt. Rivaliseringen fra Aviant er foreløpig begrenset
+av skala, mens Wing og Amazon kan bli mulige rivaler dersom regelverket
+for U-space og BVLOS modner \parencite{euuas2021, lovdata2024_uspace}.
+Den strategiske implikasjonen er at Zipline må konsentrere seg om de
+kjøpsanledningene der substituttenes dekningsbredde er svakest, det vil
+si der Platform 2 sine fysiske rammer på 3,6~kg, 16~km radius og krav om
+privat uteareal ikke er begrensende, og der eksisterende plattformer i
+mindre grad allerede dekker behovet til en pris og hastighet markedet
+aksepterer. Samtidig må attraktive dagligvare- og restaurantpartnere
+låses inn tidlig, ettersom maktbalansen i forhandlingsfasen i dag
+favoriserer partnerne, og førsteetableringsfortrinnet overfor Wing og
+Amazon avhenger av at både regulatoriske godkjenninger og kommersielle
+avtaler er på plass før EUs U-space-rammeverk liberaliseres ytterligere.
+Strategiske valg konkretiseres videre i markedsstrategikapittelet.
