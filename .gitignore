@@ -1,6 +1,7 @@
 # LaTeX build artifacts
 *.aux
 *.bbl
+*.bbl-SAVE-ERROR
 *.bcf
 *.blg
 *.fdb_latexmk
@@ -9,12 +10,16 @@
 *.out
 *.run.xml
 *.synctex.gz
+*.synctex(busy)
 *.toc
 *.lof
 *.lot
 *.nav
 *.snm
 *.vrb
+
+# LaTeX build PDF output (source PDFs in references/, drafts/, etc. stay tracked)
+report/main.pdf
 
 # Build directory
 build/
