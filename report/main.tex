@@ -22,6 +22,8 @@
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
 
+\begin{refsection}
+
 \import{./Sections/}{01_Problembeskrivelse}
 \import{./Sections/}{02_Intern_analyse}
 \import{./Sections/}{03_Ekstern_analyse}
@@ -32,7 +34,25 @@
 \import{./Sections/}{08_Okonomisk_analyse}
 
 \newpage
-\printbibliography[heading=bibintoc, title={Referanser}]
+\newgeometry{left=6mm,right=6mm,top=8mm,bottom=8mm,headheight=15pt,footskip=8mm}
+\begingroup
+\fontsize{8}{8.4}\selectfont
+\sloppy
+\setlength{\bibitemsep}{0pt}
+\setlength{\bibinitsep}{0pt}
+\setlength{\bibhang}{0pt}
+\setlength{\columnsep}{6pt}
+\setlength{\multicolsep}{0pt}
+\renewcommand*{\bibfont}{\normalfont\fontsize{8}{8.4}\selectfont\raggedright}
+\section*{Referanser}
+\addcontentsline{toc}{section}{Referanser}
+\begin{multicols*}{4}
+\printbibliography[heading=none]
+\end{multicols*}
+\endgroup
+\restoregeometry
+
+\end{refsection}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
 \addappendix
