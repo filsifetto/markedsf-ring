@@ -5,99 +5,45 @@ Nesodden og fase 1--3 i den langsiktige planen, og vurderer hvor langt
 unna lønnsomhet driften ligger ved utgangen av 24-måneders\-vinduet.
 Fase 4 inngår ikke i kontantstrøm\-analysen, ettersom byvalg og
 kapitalbinding der avhenger av læring fra fase 3. Tallene bygger på
-offentlige norske kilder der de finnes, og på sammenlign\-bare
-europeiske og amerikanske benchmarks der norske data ikke er publisert.
-Sentrale antagelser dokumenteres fortløpende, og kapittelet avsluttes
-med følsomhets\-analyse på de tre variablene markedsstrategien er mest
-eksponert for.
+offentlige norske kilder der de finnes, og på sammenlignbare europeiske
+og amerikanske benchmarks der norske data ikke er publisert. Detaljerte
+antagelser, kilder og utregninger er samlet i vedlegg~\ref{app:okonomi}.
 
-\subsection{Kostnadsstruktur og forutsetninger}
+\subsection{Hovedtall fra kostnads- og inntektsmodellen}
 
-\textbf{CAPEX per drone.} Zipline oppgir ikke offentlige kostnader for
-Platform 2-dronen, og det finnes ingen tilgjengelig prisliste for
-VTOL-leveringsdroner i samme klasse. Som referansepunkt brukes
-Wingcopter 198, en kommersiell tilt-rotor-VTOL med 5 kg nyttelast og
-BVLOS-sertifisering under arbeid, der bransjekilder oppgir en enhetspris
-i området 80~000--100~000 USD \parencite{dronedeliverypro2024}. Et
-basisanslag på 90~000 USD per drone, eller om lag 945~000 NOK ved en
-kurs på 10{,}5 NOK/USD, brukes videre. En pilotflåte på fem droner gir
-da 4{,}7~MNOK i drone-CAPEX. Utvidelsen til 17--20 droner i fase 1 og
-32--35 droner i fase 2 gir inkremental drone-CAPEX på henholdsvis
-11{,}3--14{,}2 MNOK og 11{,}3--14{,}2 MNOK.
+\textbf{CAPEX per drone.} Basisanslaget er om lag 945 k NOK per drone
+(90~000 USD ved kurs 10{,}5 NOK/USD). Pilotflåten på fem droner gir
+4{,}7 MNOK i drone-CAPEX, og ekspansjonene til 17--20 droner i fase 1
+og 32--35 droner i fase 2 gir inkremental drone-CAPEX på rundt
+11{,}3--14{,}2 MNOK i hver fase (jf.\ vedlegg~\ref{app:capex}).
 
-\textbf{Hub og regulatorisk oppstart.} En hub med launchpad, lading,
-lager og programvareintegrasjon ved Alti Vinterbro estimeres til
-1{,}5 MNOK basert på industribenchmark for distribusjonssentre i samme
-kategori \parencite{freightamigo2025}. Luftfartstilsynet krever 20~000
-NOK årlig gebyr for godkjent operatør i spesifikk kategori, pluss
-saksbehandlings\-gebyr etter regning \parencite{uasnorway2025_gebyr}.
-Hovedkostnaden ligger i ekstern rådgivning og teknisk dokumentasjon for
-SORA-vurdering og BVLOS-søknad, som for sammenlignbare europeiske
-oppstartsprosjekter ligger på 50~000--150~000 EUR
-\parencite{proflycenter2024}, tilsvarende 0{,}6--1{,}8 MNOK. Et
-basisanslag på 1{,}0 MNOK brukes videre. Inkludert reserve for
-uforutsette kostnader lander samlet pilot-CAPEX på 7{,}7 MNOK.
+\textbf{Hub og regulatorisk oppstart.} Hub ved Alti Vinterbro og
+regulatorisk arbeid (SORA og BVLOS) utgjør henholdsvis 1{,}5 og
+1{,}0 MNOK. Inkludert reserve for uforutsette kostnader lander samlet
+pilot-CAPEX på 7{,}7 MNOK (jf.\ vedlegg~\ref{app:hub}).
 
-\textbf{Fast OPEX inkludert markedsbudsjett.} Pilotorganisasjonen består
-av fem heltidsstillinger (pilotprosjektleder, operasjonsansvarlig,
-markedsansvarlig, partneransvarlig og tekniker). Brutto årslønn for
-sammenlignbare stillinger i Oslo-regionen ligger i området
-750~000--1~000~000 NOK \parencite{ssb2025_lonn, tekna2025}. Et lastet
-kostnadsmultiplikator på 1{,}35 brukes for å fange arbeidsgiveravgift på
-14{,}1~\% i sone 1 \parencite{skatteetaten2025}, feriepenger på 12~\%,
-OTP på 5~\% og yrkesskadeforsikring. Ved gjennomsnittlig brutto årslønn
-på 850~000 NOK gir dette en samlet arbeidskraftkostnad på 1{,}15 MNOK
-per årsverk per år, eller om lag 480 k per måned for fem stillinger.
-Leie av et hub-areal på 175 m\textsuperscript{2} ved Vinterbro (kombi
-kontor og lager) anslås til 1~300 NOK/m\textsuperscript{2}/år
-\parencite{metra2025}, tilsvarende 19 k per måned. Ansvarsforsikring for
-en flåte på fem droner i BVLOS-drift anslås til 20 k per måned basert på
-europeiske benchmarks for kommersiell BVLOS-forsikring
-\parencite{coverdrone2025, jouav2024_insurance}. Markedsbudsjettet i
-piloten settes til 150 k per måned. Samlet fast OPEX inkludert
-markedsbudsjett i pilotfasen lander dermed på rundt 670 k per måned.
+\textbf{Fast OPEX inkludert markedsbudsjett.} Lønn for fem
+heltidsstillinger, leie av hub-areal, ansvarsforsikring og
+markedsbudsjett gir samlet fast OPEX på rundt 670 k NOK per måned i
+piloten, økende til 1{,}42 MNOK i fase 1, 2{,}15 MNOK i fase 2 og
+2{,}9 MNOK i fase 3 (jf.\ vedlegg~\ref{app:fastopex}).
 
-\textbf{Variabel OPEX per leveranse.} Energiforbruket for en VTOL-drone
-i Platform 2-klassen estimeres til 0{,}5--0{,}8 kWh per
-tur-retur-leveranse \parencite{stolaroff2018}, noe som med en
-kommersiell strømpris på 1{,}30 NOK/kWh inkludert nettleie, elavgift og
-MVA \parencite{ssb2026_strompris} gir under 1 NOK i energikostnad per
-leveranse. Vedlikehold er hovedkilden til usikkerhet. Manna Aero, som er
-den mest transparente sammenlignbare aktøren, oppgir om lag 4 USD per
-leveranse ved nåværende drift, med ambisjon om 1 USD ved skala
-\parencite{sacra2025_manna}. På pilotvolum allokeres slitasje over få
-leveranser, og et realistisk variabelt kostnadsanslag er 35 NOK per
-leveranse i pilot, fallende til 22 NOK ved fase 3-volum.
+\textbf{Variabel OPEX per leveranse.} Variabel kostnad ligger på
+35 NOK i pilot, fallende til 22 NOK ved fase 3-volum etter hvert som
+vedlikeholdskostnaden allokeres over større volum. Energi utgjør under
+1 NOK per leveranse (jf.\ vedlegg~\ref{app:variabelopex}).
 
-\textbf{Inntekt per leveranse.} I USA opererer Zipline med en
-forbrukerrettet modell der kunden betaler 0{,}99--2{,}99 USD i
-leveringsgebyr pluss et servicegebyr på 15--20 prosent oppad begrenset
-til 6 USD \parencite{stevens2025}. Den norske posisjoneringen krever et
-leveringsgebyr som ligger tydelig under Foodoras 49--59 NOK
-\parencite{allrestaurantmenus2026}, og settes til 29 NOK.
-Partnerprovisjonen settes til 25~\% av bestillingsverdien, lavere enn
-Foodoras 30--35~\% og i nedre sjikt av Wolts 20--30~\%
-\parencite{nettavisen2024_foodora}, for å gjøre Zipline attraktiv for
-partnere i oppstartsfasen. Snittbestilling antas å være 250 NOK basert
-på typisk ordreverdi for restaurantsegmentet i Norden
-\parencite{statista2024_food_delivery_norway}. Samlet inntekt per
-leveranse blir dermed $29 + 0{,}25 \times 250 = 91{,}5$ NOK.
+\textbf{Inntekt per leveranse.} Med leveringsgebyr på 29 NOK og
+partnerprovisjon på 25~\% av en gjennomsnittlig bestillingsverdi på
+250 NOK gir inntekt per leveranse 91{,}5 NOK
+(jf.\ vedlegg~\ref{app:inntekt}).
 
 \subsection{Kostnadsbilde og kontantstrøm per fase}
 
 Tabell~\ref{tab:fasekostnader} oppsummerer parametrene per fase.
-\textit{Fast OPEX} i tabellen inkluderer markedsbudsjettet for å unngå
-dobbelt\-telling. Volumet ved utgangen av hver fase bygger på
-adopsjons\-målene i \ref{sec:malsetninger} og husholdnings\-tallene i
-målmarkedene, om lag 9~550 husholdninger på Nesodden, 103~000 i Bærum
-og Asker \parencite{ssb_kommunefakta_baerum, ssb_kommunefakta_asker} og
-22~000 i Vestre Aker \parencite{oslo_bydelsfakta_vestreaker}.
-Markedsbudsjettet differensieres etter kanalmiks fra
-målrettings\-analysen. Pilot og fase 1 dominerer av publikumsbasert
-annonsering med Meta-CPM rundt 147 NOK i Norge
-\parencite{superads2026}, fase 2 vekter ambassadørprogram og lokal
-relasjons\-bygging tyngre, og fase 3 absorberer både videreført kampanje
-og analysearbeid på tvers av segmentene.
+Volumantagelsene bygger på adopsjons\-målene fra målsetningen og
+husholdnings\-tallene i målmarkedene. Detaljert nedbrytning av
+volum og kontantstrøm per fase finnes i vedlegg~\ref{app:volum}.
 
 \begin{table}[h]
 \centering
@@ -117,37 +63,18 @@ Fase 3 (konsolidering) & 14~000 & 22 & 2~900 & 5{,}0 \\
 \end{tabular}
 \end{table}
 
-Pilotfasen genererer et samlet operativt underskudd på om lag 7{,}8 MNOK
-over 12 måneder. Med snittvolum på 400 leveranser per måned dekker
-bidragsmarginen kun 22{,}6 k per måned, mens fast OPEX ligger på 670 k.
-Sammen med 7{,}7 MNOK i CAPEX gir piloten en akkumulert kapitalbinding
-på rundt 15{,}5 MNOK ved overgangen til fase 1.
-
-Fase 1 legger på inkremental CAPEX på 13{,}5 MNOK og et operativt
-underskudd på rundt 7{,}6 MNOK over seks måneder. Bidrags\-marginen ved
-utgangen av fasen er $4\,000 \times (91{,}5 - 28) = 254$ k per
-måned, fortsatt godt under fast OPEX på 1{,}42 MNOK per måned. Fase 2
-utvider dekningen til Vestre Aker med 11 MNOK i ny CAPEX, og
-bidrags\-marginen ved utgangen av fasen passerer 519 k per måned.
-Operativt underskudd i fase 2 lander på 10{,}6 MNOK fordi fast OPEX øker
-mer enn bidrags\-marginen i denne perioden. Fase 3 har et lavere
-CAPEX-behov på 5 MNOK siden infrastrukturen i hovedsak er bygget, men
-operativt underskudd holder seg høyt på 12{,}9 MNOK fordi organisasjonen
-vokser parallelt med volumet.
-
-\textbf{Akkumulert kapitalbehov ved måned 24.} Summert lander total
-kapitalbinding på 76 MNOK, fordelt på 37 MNOK kumulativ CAPEX og 39 MNOK
-kumulativt operativt underskudd. Dette er et grovt anslag som
-forutsetter at adopsjons\-takten følger målene, og at norsk vinterdrift
-ikke krever vesentlige justeringer av flåtekapasitet eller
-vedlikeholds\-frekvens utover det som er bygd inn i variabel kostnad.
+Akkumulert kapitalbinding ved måned 24 lander på rundt 76 MNOK,
+fordelt på 37 MNOK kumulativ CAPEX og 39 MNOK kumulativt operativt
+underskudd. Bidragsmarginen vokser gjennom fasene, men dekker ikke
+fast OPEX innen utløpet av perioden.
 
 \subsection{Følsomhetsanalyse}
 
-Tre variabler driver mest variasjon i resultatet, nemlig snittkurv, CAC
-og adopsjonsrate. Tabell~\ref{tab:sensitivitet} viser hvordan akkumulert
-kontantstrøm ved måned 24 endrer seg når hver variabel beveges 25~\% i
-hver retning fra basisverdien, med øvrige parametere holdt konstant.
+Tre variabler driver mest variasjon i resultatet, nemlig snittkurv,
+CAC og adopsjonsrate. Tabell~\ref{tab:sensitivitet} viser hvordan
+akkumulert kontantstrøm ved måned 24 endrer seg når hver variabel
+beveges 25~\% i hver retning fra basisverdien, med øvrige parametere
+holdt konstant.
 
 \begin{table}[h]
 \centering
@@ -168,15 +95,8 @@ Adopsjon (\% av husholdninger) & 2{,}25 & 3{,}00 & 3{,}75 \\
 \end{tabular}
 \end{table}
 
-Snittkurven har størst marginal\-effekt fordi den slår direkte gjennom
-på partner\-provisjonen som dominerer inntekten per leveranse. En
-reduksjon på 25~\% i snittkurv senker bidrags\-marginen fra 63{,}5 til
-47 NOK per leveranse i fase 1, og forsinker break-even med flere
-måneder. CAC har isolert sett mer begrenset effekt fordi
-markedsbudsjettet bare utgjør om lag 22~\% av fast OPEX, men slår
-sterkt inn i kombinasjon med svakere adopsjon. Det mest sårbare
-scenariet er kombinert lavere adopsjon og lavere snittkurv, som ville
-øke kapitalbehovet ved måned 24 med 14--18 MNOK utover basis.
+Detaljert tolkning av effektene finnes i
+vedlegg~\ref{app:sensitivitet}.
 
 \subsection{Lønnsomhet og break-even}
 
@@ -200,14 +120,14 @@ Stortingsmeldingen om droner og ny luftmobilitet og statsbudsjettet for
 2025 bevilger samlet 50 MNOK til testarenaen for null- og
 lavutslipps\-luftfart, fordelt på Luftfartstilsynet og Avinor
 \parencite{prop1s2024, parat24_2024}, og statsbudsjettet for 2026
-foreslår ytterligere 50 MNOK. Innovasjon Norges Pilot-T-ordning omfatter
-eksplisitt droneoperasjoner og autonom mobilitet
-\parencite{innovasjonnorge2025_pilott}. Samlet utgjør tilskudds\-grunnlaget
-en realistisk delfinansiering på 5--15 MNOK for pilot- og fase
-1-aktivitet, noe som kan redusere det kumulative kapital\-behovet ved
-måned 24 til om lag 60--70 MNOK. Slik delfinansiering avhenger av at
-Zipline kan dokumentere klima\-gevinst og innovasjons\-bidrag, og
-forhandles inn parallelt med BVLOS-prosessen.
+foreslår ytterligere 50 MNOK. Innovasjon Norges Pilot-T-ordning
+omfatter eksplisitt droneoperasjoner og autonom mobilitet
+\parencite{innovasjonnorge2025_pilott}. Samlet utgjør
+tilskudds\-grunnlaget en realistisk delfinansiering på 5--15 MNOK for
+pilot- og fase 1-aktivitet, noe som kan redusere det kumulative
+kapital\-behovet ved måned 24 til om lag 60--70 MNOK. Slik
+delfinansiering avhenger av at Zipline kan dokumentere klima\-gevinst
+og innovasjons\-bidrag, og forhandles inn parallelt med BVLOS-prosessen.
 
 \subsection{Implikasjoner}
 
@@ -221,5 +141,5 @@ trolig 16--22 måneder utenfor 24-måneders\-vinduet og krever at fase 4
 lykkes i et nytt geografisk marked. Den strategiske implikasjonen er at
 hver faseovergang bør behandles som et reelt go/no-go-beslutnings\-punkt
 med tydelige terskel\-verdier på snittkurv, adopsjons\-rate og
-bidrags\-margin, slik kontroll\-rammeverket i \ref{subsec:oppfolging}
+bidrags\-margin, slik kontroll\-rammeverket i seksjon~\ref{subsec:oppfolging}
 legger opp til.
