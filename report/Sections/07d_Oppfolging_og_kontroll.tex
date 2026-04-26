@@ -1,117 +1,50 @@
 % Agent documentation:
 % Purpose: specify how the activity program is monitored, diagnosed, and
-% adjusted during pilot and scale-up.
-% Downstream use: provides the go/no-go logic referenced by the economic
-% implications.
-% Revision guardrails: this section must mirror the KPIs and thresholds in
-% Sections 05, 07b, and 07c. If those numbers change, update this file in the
-% same pass.
+% adjusted during the Nesodden, Bærum, and Asker rollout.
+% Downstream use: provides go/no-go logic for operational decisions.
+% Revision guardrails: mirror the KPIs and thresholds in Sections 05, 07b, and
+% 07c. Keep phase gates at months 3, 6, 12, 18, and 24.
 \subsection{Oppfølging og kontroll}
 \label{subsec:oppfolging}
 
-Aktivitetsprogrammet strekker seg over en inntil 12 måneders pilot og
-en påfølgende 24~måneders langtidsplan, og krever aktiv styring
-underveis. \textcite[697]{kotlerkeller2016} definerer markedskontroll
-som prosessen der selskaper vurderer effekten av egne
-markedsaktiviteter og gjør nødvendige justeringer. Kontroll uten
-korrigerende tiltak har liten verdi, og kontroll uten tydelig eierskap
-ender som en rapporteringsrutine ved siden av driften. Seksjonen
-beskriver derfor først kontrollen i piloten, deretter kontrollen i
-langtidsplanen, og til slutt den samlede ansvarsfordelingen.
-Kontrollpunktene måler om markedsmålene fra
-\ref{sec:malsetninger} faktisk nås.
+Aktivitetsprogrammet krever løpende kontroll fordi Zipline går inn i en ny
+kategori med høy usikkerhet. Kontroll skal ikke bare dokumentere resultater.
+Den skal vise hva som må justeres før neste fase starter
+\parencite[697]{kotlerkeller2016}. Kontrollpunktene knyttes derfor til
+markedsmålene i \ref{sec:malsetninger} og til KPI-ene i tiltakskapittelet.
 
-\subsubsection{Kontroll i pilotfasen}
+\subsubsection{Månedlig driftskontroll}
 
-Piloten følger de tre indikatortypene som er beskrevet i
-pilotkapittelet, nemlig markedsmessige indikatorer (trial-rate,
-gjenkjøp, kundetilfredshet), operative indikatorer (leveringstid,
-punktlighet, avviksrate) og aksept- og trygghetsindikatorer (opplevd
-trygghet, naboaksept, støy). Disse måles kontinuerlig gjennom hele
-perioden, ikke bare ved avslutning, og eierskapet er fordelt som vist i
-tabell~\ref{tab:ansvar-kontroll}.
+Hvert aktivt marked bør måles månedlig. De viktigste operative indikatorene
+er leveringstid, punktlighet, avviksrate og kanselleringer. De viktigste
+markedsindikatorene er CAC, konverteringsrate, snittkurv, gjenkjøp og andel
+aktive kunder. I tillegg bør Zipline måle opplevd trygghet, støyreaksjoner,
+NPS og anbefalinger fra eksisterende kunder.
 
-For at indikatorene skal styre atferd og ikke bare dokumentere den, har
-hver indikator en forhåndsdefinert terskelverdi (jf.\ pilotkapittelet)
-og et definert handlingsrom dersom terskelen ikke nås. Hvis opplevd
-trygghet ligger vesentlig under forventet nivå, bør Zipline forlenge
-tillitsarbeidet og justere kommunikasjonen rundt godkjenning og
-sikkerhet før piloten utvides. Hvis punktligheten svikter jevnt på
-bestemte leveringspunkter, er det ikke markedsføringen som skal
-justeres, men ruteplanleggingen eller basedriften. Hvis gjenkjøpsraten
-er lav til tross for introduksjonstilbud, er det verdiforslaget eller
-appopplevelsen som må undersøkes, ikke kommunikasjonen. Avvik betyr
-ikke automatisk at piloten har mislyktes, men utløser en diagnose av
-årsaken og et konkret tiltak før arbeidet går videre.
+Avvik må diagnostiseres før tiltak velges. Hvis leveringstiden svikter, må
+ruteplanlegging, base eller leveringspunkter justeres. Hvis mange prøver
+tjenesten, men få bestiller på nytt, ligger problemet trolig i verdiforslaget,
+sortimentet eller appopplevelsen. Hvis kjennskapen er høy, men første kjøp er
+lavt, må førstegangstilbudet eller risikokommunikasjonen forbedres.
 
-Overgangen fra pilot til langtidsplanens første fase er et strategisk
-beslutningspunkt eid av ledelsen, fordi den utløser betydelige
-investeringer og en ny risikoeksponering. Dersom terskelverdiene ikke
-nås, må Zipline ta en bevisst beslutning om å forlenge piloten, justere
-konkrete tiltak eller revidere planen for de neste markedene.
+\subsubsection{Faseporter}
 
-\subsubsection{Kontroll i den langsiktige planen}
+Faseoverganger skal være beslutninger, ikke kalenderautomatikk. Ved måned 3
+vurderes de første Nesodden-dataene. Ved måned 6 avgjøres om primærsegmentet
+kan forberedes eller om Nesodden må forlenges. Ved måned 12 vurderes Bærum
+før Asker eventuelt skaleres opp innenfor samme fase. Ved måned 18 vurderes
+om Bærum og Asker samlet oppfyller kravet til aktiv kundebase og gjenkjøp.
+Ved måned 24 avgjør ledelsen hvilket marked Zipline bør gå videre til.
 
-Over den 24~måneder lange ekspansjonsplanen fungerer tre kontrollnivåer
-sammen, hver med ulik frekvens, fokus og eierskap.
-
-\paragraph{Månedlig driftskontroll.}
-Operative og markedsmessige nøkkeltall måles per aktivt marked, nemlig
-leveringstid, punktlighet, avviks- og kanselleringsrate,
-kundetilfredshet, CAC, konverteringsrate, snittkurv og gjenkjøp.
-Operasjonell ansvarlig eier de driftsrelaterte indikatorene, og
-markedsansvarlig eier kampanje- og konverteringsmetrikkene. Formålet er
-å fange operative problemer før de rammer kundeopplevelsen bredt, og å
-oppdage kampanjer som ikke virker før budsjettet brennes. Avvik
-diagnostiseres etter kilde slik at tiltaket treffer problemet. Svikter
-leveringstiden konsekvent i rushtiden, er det baselokasjonen eller
-ruteplanleggingen som må revideres, ikke kampanjebudskapet. Faller
-gjenkjøpsraten etter introduksjonskampanjen, er det verdiforslaget
-eller appopplevelsen som må undersøkes.
-
-\paragraph{Kvartalsvis lønnsomhets- og posisjonskontroll.}
-Hvert kvartal brytes resultatene ned på segment, område og kundegruppe
-for å identifisere hvor Zipline tjener og taper penger. Kontrollen
-inkluderer adopsjonsrate per aktivt marked (jf.\ markedsmål 3 i
-\ref{sec:malsetninger}), LTV/CAC-forholdet, og fra fase 2 også NPS og
-referral-andelen. Resultatene brukes til å reallokere ressurser mellom
-fasene og til å stramme målrettingen mot kundegruppene med høyest
-livstidsverdi. Eierskapet ligger hos økonomiansvarlig, og beslutningen
-om omfordeling av markedsbudsjett tas i dialog med markedsansvarlig.
-
-\paragraph{Strategisk revisjon ved faseovergangene.}
-Ved måned~6, 12, 18 og 24 gjennomføres en bredere strategisk
-gjennomgang som vurderer om planen fortsatt er den riktige, ikke bare
-om planen går som tenkt. Gjennomgangen tester tre forhold. Først om
-segmenteringen fortsatt treffer, eller om data peker mot andre
-geografier eller kundegrupper. Deretter om posisjoneringen som raskere
-og rimeligere faktisk dokumenteres i opplevd kundeverdi. Til slutt om
-de tre antagelsene planen bygger på fortsatt holder, det vil si at Wing
-ikke etablerer seg tungt i Norge, at regelverket ikke åpnes så
-raskt at Foodora og Wolt enkelt kan kopiere dronelevering, og at norske
-vinterforhold ikke skaper avbrudd som svekker kundeopplevelsen. Ved
-måned~12 inngår markedsundersøkelsen som måler markedsmål 2 i
-\ref{sec:malsetninger}, det vil si spontan posisjonsassosiasjon og
-førstevalg blant triere. I samme gjennomgang vurderes hvilke av
-lønnsomhetsdriverne i fase 3 (svak konkurranse, høy kjøpekraft,
-geografisk egnethet, lav adopsjonsbarriere eller bestemte
-partnerkombinasjoner) som best forklarer observert utvikling. Hvis en
-antagelse faller, er det ikke en månedlig justering som trengs, men en
-revisjon av planens overordnede logikk. Det regulatoriske og politiske
-arbeidet inngår også, ettersom endringer her direkte påvirker hvilke
-faser som er gjennomførbare og i hvilken rekkefølge. Eierskapet ligger
-hos ledelsen, og hver faseovergang er et bevisst beslutningspunkt
-fremfor en automatisk kalendermessig overgang.
+Ved måned 12 bør Zipline også gjennomføre en enkel posisjonsmåling i
+primærsegmentet. Målingen bør teste om respondentene spontant knytter
+Zipline til raskere og rimeligere levering enn Foodora og Wolt. Dette følger
+markedsmålet om posisjonering i \ref{sec:malsetninger}.
 
 \subsubsection{Ansvarsfordeling}
 
-Tabell~\ref{tab:ansvar-kontroll} samler ansvarsfordelingen for
-kontrollpunktene på tvers av aktivitetsprogrammet. Rolletitlene er
-indikative og kan tilpasses den interne organiseringen Zipline
-etablerer i det norske markedet, men prinsippet er at hvert
-kontrollpunkt bør ligge nærmest den som faktisk har tilgang til å
-justere det som måles. På den måten blir kontrollen et reelt
-styringsverktøy fremfor en rapporteringsrutine ved siden av driften.
+Eierskapet bør ligge hos den funksjonen som faktisk kan endre det som måles.
+Tabell~\ref{tab:ansvar-kontroll} viser en enkel ansvarsdeling.
 
 \begin{table}[H]
 \centering
@@ -125,36 +58,21 @@ styringsverktøy fremfor en rapporteringsrutine ved siden av driften.
 \color{white}\textbf{Kontrollpunkt} &
 \color{white}\textbf{Eierskap og beslutningsrom} \\
 \midrule
-Operative KPI-er (leveringstid, punktlighet, avviksrate) &
-Operasjonell ansvarlig. Kan justere ruteplanlegging, basedrift og flåtedisponering. \\
+Operative KPI-er &
+Operasjonell ansvarlig. Kan justere ruter, base, leveringspunkter og flåtebruk. \\
 \rowcolor{tablerow}
-Markedsmessige KPI-er (CAC, konvertering, snittkurv, gjenkjøp) &
-Markedsansvarlig. Kan justere kampanjer, kanalmiks og kreativ retning innenfor gitt budsjett. \\
-Aksept- og trygghetsindikatorer &
-Kommunikasjonsansvarlig i dialog med pilotprosjektleder. Kan justere sikkerhetskommunikasjon, naboarbeid og lokal PR. \\
+Markedsmessige KPI-er &
+Markedsansvarlig. Kan justere budskap, kanalbruk, førstegangstilbud og budsjett. \\
+Aksept, trygghet og støy &
+Kommunikasjonsansvarlig. Kan justere lokal informasjon, sikkerhetsbudskap og naboarbeid. \\
 \rowcolor{tablerow}
-Kvartalsvis segmentlønnsomhet, adopsjonsrate og fase 2-indikatorer (NPS, referral) &
-Økonomiansvarlig, i dialog med markedsansvarlig om omfordeling av markedsbudsjett. \\
-Markedsundersøkelse for posisjonering ved måned~12 &
-Markedsansvarlig, i dialog med ledelsen om strategisk respons ved avvik. \\
+Partnerresultater og sortiment &
+Partneransvarlig. Kan justere partnerprioritering, kampanjer og vareutvalg. \\
+Faseporter ved måned 3, 6, 12, 18 og 24 &
+Ledelsen. Tar go/no-go-beslutninger og bestemmer om planen skal justeres. \\
 \rowcolor{tablerow}
-Pilotens kontinuerlige måling og diagnose ved avvik &
-Pilotprosjektleder. Kan forlenge piloten, justere tiltak eller eskalere til ledelsen. \\
-Overgang fra pilot til langtidsplan &
-Ledelsen. Strategisk go/no-go basert på pilotens terskelverdier. \\
-\rowcolor{tablerow}
-Faseovergangene i langtidsplanen (måned~6, 12, 18, 24) &
-Ledelsen. Strategisk go/no-go og eventuell revisjon av planens overordnede logikk. \\
-Regulatorisk arbeid (Luftfartstilsynet, EASA) &
-Dedikert regulatorisk ansvarlig gjennom hele perioden. \\
-\rowcolor{tablerow}
-Politisk arbeid og offentlig finansiering &
-Ledelsen i samråd med regulatorisk ansvarlig. \\
-Partnerrelasjoner (innholdspartnere) &
-Partneransvarlig. Eier både rammevilkår og daglig koordinering. \\
-\rowcolor{tablerow}
-Ambassadørprogram i fase 2 (Holmenkollen, Slemdal, Vinderen) &
-Dedikert relasjonsansvarlig med lokal forankring. \\
+Regulatorisk arbeid &
+Dedikert regulatorisk ansvarlig. Eier dialogen med Luftfartstilsynet og EASA. \\
 \bottomrule
 \end{tabularx}
 \end{table}

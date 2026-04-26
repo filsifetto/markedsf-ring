@@ -1,151 +1,86 @@
 % Agent documentation:
-% Purpose: describe the 24-month expansion path after a successful Nesodden
-% pilot.
+% Purpose: describe the 24-month expansion path from Nesodden to the primary
+% suburban segment.
 % Downstream use: phase timing, markets, and thresholds feed the control
-% framework and economic model.
-% Revision guardrails: keep phase numbering, dates, market sequence, and
-% transition criteria aligned with Sections 05, 07b, 07d, and 08.
-\subsection{Langsiktig plan: fra pilot til nasjonal tilstedeværelse}
+% framework.
+% Revision guardrails: keep phase timing aligned with Sections 05, 07b, and
+% 07d. Do not introduce Asker as a separate phase unless the goals change.
+\subsection{Langsiktig plan fra Nesodden til primærsegmentet}
 
-Den langsiktige planen starter etter at pilotprosjektet på Nesodden er
-gjennomført og evaluert. Når planen bruker ``måned 0'', betyr det altså
-første måned etter piloten, ikke første måned i pilotperioden.
+Den langsiktige planen starter ved første kommersielle lansering på
+Nesodden. Måned 0 betyr derfor første måned med aktive bestillinger på
+Nesodden. Denne tolkningen gjør at planen henger sammen med markedsmålet om
+drift i minst to nye markeder innen 24 måneder etter første lansering (jf.\
+\ref{sec:malsetninger}).
 
-Dersom piloten når terskelverdiene fra forrige underseksjon, bør Zipline
-bruke 24 måneder på å gå gradvis fra et kontrollert testmarked til
-bredere tilstedeværelse i Oslo-regionen. Planen er strukturert for å
-oppfylle det tredje overordnede markedsmålet om skalerbarhet utover
-første lokalmarked (jf.\ \ref{sec:malsetninger}). Den går i fire trinn,
-fra Bærum og Asker, via Vestre Aker og Holmenkollen, til konsolidering i
-Oslo-regionen og valg av neste by. Hovedfokuset i faseinndelingen er at
-hver fase retter oppmerksomheten mot ett kundesegment om gangen, slik at
-Zipline kan lære hva som driver adopsjon og lønnsomhet i nettopp den
-gruppen før innsiktene videreføres til de senere fasene. Hver fase er
-bygget rundt et eget strategisk spørsmål og avsluttes med konkrete
-overgangskriterier som styrer videreutvikling til neste trinn.
+Planen bør ha tre faser. Fase 1 er Nesodden, som er beskrevet i forrige
+del. Fase 2 er Bærum og Asker, der Zipline tester konkurranse mot Foodora og
+Wolt i primærsegmentet. Fase 3 er konsolidering og valg av neste geografiske
+område. Asker bør ikke være en egen fase, fordi markedet ligger i samme
+segment som Bærum og bør bruke samme tiltakslogikk.
 
-\subsubsection{Fase 1 -- Bærum og Asker (måned 0--6)}
+\subsubsection{Fase 2, Bærum og Asker (måned 6--18)}
 
-Bærum og Asker er det første markedet etter piloten fordi de tester det
-viktigste strategiske spørsmålet, om Zipline kan vinne kunder fra
-etablerte alternativer som Foodora og Wolt. På Nesodden er substituttene
-tilnærmet fraværende. I Bærum og Asker er byttekostnaden derimot lav.
-Kunden er ikke bundet til én plattform og kan velge fritt mellom Foodora,
-Wolt og Zipline fra ordre til ordre, noe som ifølge Porters
-femkraftsanalyse forsterker kjøpernes forhandlingsmakt
-\parencite{porter1980}.
-Markedet er også kommersielt mer attraktivt, med høy kjøpekraft, store
-boligområder og kunder som allerede bruker leveringstjenester.
+Bærum og Asker er samlet fase fordi de representerer samme primærsegment.
+Markedene har mange eneboligshusholdninger, høy kjøpekraft og etablerte
+leveringsvaner \parencite{ssb_kommunefakta_baerum, ssb_kommunefakta_asker,
+wolt2026_asker_sandvika}. Her er spørsmålet om Zipline kan vinne neste ordre
+fra Foodora og Wolt.
 
-Som diskutert i målrettingen er hovedkanalen for forstadssegmentet
-publikumsbasert markedsføring. Kjerneaktiviteten er derfor målrettet
-annonsering i sosiale medier mot områder der tjenesten er tilgjengelig
-og der Foodora og Wolt har svakere dekning eller lengre leveringstid. Budskapet bygger på den fastlagte posisjoneringen
-(jf.\ avsnitt~\ref{subsec:posisjonering}), der Zipline kommuniserer samme
-type bestilling som kunden allerede kjenner, bare raskere og rimeligere. En byttekampanje med
-gratis eller sterkt rabattert førstegangslevering senker prøveterskelen,
-og i appen sammenlignes pris og leveringstid synlig i kjøpsøyeblikket.
-Et leveringsløfte med kompensasjon ved brutt tidsvindu gjør
-hastighetsfordelen konkret og målbar. I tillegg bør Zipline inngå
-partnerskap med én eller to profilerte restauranter eller butikker i
-Sandvika, Lysaker eller Asker for å gi både relevant innhold til
-markedsføringen og en grunn til at kundene prøver tjenesten tidlig.
+Utrullingen bør starte i Bærum, fordi markedet gir høy tetthet av relevante
+husholdninger og nærhet til Sandvika og Lysaker. Hvis Bærum viser
+tilfredsstillende prøving, gjenkjøp og punktlighet, bør Asker legges til som
+replisering innen samme fase. Da tester Zipline om tiltakene fungerer utover
+ett lokalt område uten å lage en ny strategisk fase.
 
-Overgangskriteriet til fase 2 introduserer enhetsøkonomi som nytt
-målefokus i tillegg til pilotens KPI-er. CAC bør ligge i øvre del av
-nordiske matleveringsbenchmarks. Globalt snitt for nye matleveringsapper
-er rundt 45 til 85 dollar per kunde \parencite{businessofapps_uacosts},
-noe som i norsk høykostkontekst tilsvarer et område på rundt 500 til
-1\,000 NOK per ny kunde \parencite{ssb2024}. LTV/CAC-ratioen bør være
-minst 3 ved måned 6, et nivå som dokumenterer sunn vekst i tråd med
-bransjestandarden \parencite{understory_ltvcac}. Gjenkjøpsraten på 90
-dager bør holdes på minst 40 prosent, samme nivå som piloten, men nå
-under tyngre konkurranse fra etablerte aktører.
+Tiltakene i Bærum og Asker bør rettes mot kunder som allerede bruker
+hjemlevering. Geografisk avgrenset annonsering i leveringssonen påvirker
+primært CAC, fordi budsjettet ikke brukes på husholdninger som ikke kan
+bestille. Budskapet bør vise lavere leveringsgebyr og kortere leveringstid
+enn Foodora og Wolt. Dette bør gjøres enkelt, uten å gjøre dronelevering til
+et teknologipoeng.
 
-\subsubsection{Fase 2 -- Vestre Aker og Holmenkollen (måned 6--12)}
+Konverteringen bør styrkes i selve kjøpsøyeblikket. En byttekampanje med
+gratis eller sterkt rabattert første levering senker prøveterskelen. I appen
+bør pris og leveringstid vises før kunden bekrefter kjøpet, fordi
+kundereisen viser at valget tas på nytt ved hver bestilling. Denne
+sammenligningen passer segmentet fordi kundene allerede kjenner Foodora og
+Wolt.
 
-Fase 2 tester en annen type adopsjonsbarriere enn fase 1. I Vestre Aker
-og Holmenkollen er ikke hovedspørsmålet om Zipline er raskere, men om
-tjenesten oppleves som trygg og enkel nok for kunder med høyere
-adopsjonsbarriere. SSB viser at personer over 67 år er tregere til å ta
-i bruk nye digitale tjenester \parencite{ssb2023}, og i jobs-to-be-done-
-termer handler jobben ikke bare om levering, men om trygg og selvstendig
-hverdag \parencite{christensen2016}.
+Snittkurven bør styrkes gjennom partnerstyrte tillegg. Profilerte
+restauranter eller butikker i Sandvika, Lysaker eller Asker kan brukes i
+co-marketing, men tilbudet må være konkret. Middagspakker, drikke, dessert og
+terskelrabatter bør vises når kunden allerede er i bestillingsflyten. Målet
+er å øke ordreverdien uten å svekke enkelheten som Zipline må ha for å
+fremstå som et reelt alternativ.
 
-Som diskutert i målrettingen er hovedkanalen for Holmenkollen-klyngen
-relasjonsbasert markedsføring. Kjerneaktiviteten er derfor et
-ambassadørprogram. Zipline rekrutterer 30 til 50 tidlige brukere i
-Holmenkollen, Slemdal og Vinderen. De får personlig
-onboarding, fast kontaktpunkt og et begrenset introduksjonstilbud, og
-fungerer som lokale referanser for naboer. Programmet skalerer ikke like
-raskt som betalt annonsering, men passer bedre når barrieren er tillit.
-Zipline bør samtidig samarbeide med frivillighetssentraler,
-seniorforeninger og lokale møteplasser. Demonstrasjoner og
-informasjonsmøter gjør tjenesten konkret, og et kjent ansikt har større
-effekt enn en annonse i et segment med høyere skepsis.
+Ved måned 12 bør Zipline vurdere Bærum før Asker skaleres opp. Ved måned 18
+bør Bærum og Asker vurderes samlet opp mot markedsmålet om minst 3 prosent
+adopsjonsrate i nye markeder. Aktiv kunde bør fortsatt defineres som minst én
+bestilling siste 30 dager.
 
-Overgangskriteriet til fase 3 måles langs to dimensjoner.
-Referral-andelen, altså andelen nye kunder som kommer via ambassadører
-eller direkte anbefalinger, bør være minst 30 prosent. Dette er innenfor
-det som karakteriseres som velutformede referralprogrammer, der den
-øvre kvartilen oppnår 10 til 30 prosent av salget gjennom referral
-\parencite{referralcandy_referralrates2026}. Net Promoter Score (NPS)
-måler hvor villige eksisterende kunder er til å anbefale tjenesten til
-andre, og beregnes som andelen ``promotors'' minus andelen
-``detractors'' basert på en standardisert spørsmålsformulering. NPS bør
-i denne fasen ligge på minst 50, et nivå som klassifiseres som
-``excellent'' i bransjebenchmarks og som signaliserer at kundene ikke
-bare bruker tjenesten, men aktivt anbefaler den
-\parencite{retently_nps2026}.
+\subsubsection{Fase 3, konsolidering og neste marked (måned 18--24)}
 
-\subsubsection{Fase 3 -- Konsolidering i Oslo-regionen (måned 12--18)}
+I siste fase bør Zipline stabilisere Nesodden, Bærum og Asker før nye områder
+legges til. Hovedoppgaven er å sammenligne CAC, gjenkjøp, snittkurv,
+punktlighet, kundetilfredshet og partnerresultater på tvers av markedene.
 
-Hovedoppgaven i fase 3 er analyse og samordning. Zipline sammenligner
-data fra de tre markedstypene, altså Nesodden, Bærum/Asker og Vestre
-Aker/Holmenkollen, og avgjør hvilken segmenttype som best forklarer god
-utvikling. Spørsmålet er om svak konkurranse, høy kjøpekraft, geografisk
-egnethet, lav adopsjonsbarriere eller bestemte partnerkombinasjoner er
-den dominerende lønnsomhetsdriveren. Samtidig fyller selskapet
-geografiske hull i Oslo-regionen og gjør kundeopplevelsen lik på tvers
-av områdene gjennom felles lojalitetsprogram, felles kundeservice og en
-harmonisert app-opplevelse.
+Sammenligningen bør styre neste geografiske valg. Hvis Nesodden gir lav CAC
+og høyt gjenkjøp, bør Zipline vurdere flere logistikkisolerte områder rundt
+Oslofjorden. Hvis Bærum og Asker gir bedre enhetsøkonomi, bør selskapet
+prioritere flere suburbane eneboligområder. Beslutningen bør bygge på data,
+ikke bare på markedsstørrelse.
 
-Overgangskriteriet til fase 4 er et tallfestet lønnsomhetsskille mellom
-segmenttypene. LTV/CAC-ratioen måles per segmenttype, og minst én
-segmenttype bør oppnå ratio på minst 3 i tråd med bransjestandarden for
-sunn vekst \parencite{understory_ltvcac}. Dersom flere segmenttyper
-passerer denne tersklen, prioriteres den med høyest absolutt bidrag til
-omsetningen. Dersom ingen segmenttype når 3-nivået, må fase 4 utsettes
-og ekspansjonsplanen revideres før ytterligere bykapital bindes opp.
+\subsubsection{Tverrgående arbeid}
 
-\subsubsection{Fase 4 -- Nasjonal skalering (måned 18--24)}
+Regulatorisk arbeid og partnerarbeid må gå gjennom hele planen.
+Driftsgodkjenninger fra Luftfartstilsynet og EASA avgjør hvor raskt Zipline
+kan skalere \parencite{luftfartstilsynet2023, euuas2021}. Partnerarbeidet
+avgjør om tjenesten har varer kundene faktisk vil bestille.
 
-I fase 4 velger Zipline neste by basert på data fra fase 3, ikke bare
-markedsstørrelse. Trondheim prioriteres før Stavanger fordi selskapet
-kan bygge på erfaringer fra Aviants droneoperasjoner og BVLOS-arbeid i
-området \parencite{aviant2024}. Det betyr ikke at Aviant gjør markedet
-enkelt, men at noe av den regulatoriske og praktiske læringen allerede
-finnes i regionen. Stavanger vurderes etter Trondheim. Byen har
-kjøpekraft og relevant etterspørsel, men et tettere bybilde gjør
-dronelevering mer krevende under dagens regelverk. En trinnvis rekkefølge
-reduserer risikoen ved at Zipline først tester et marked med modne
-operative forhold, og deretter et mer krevende marked når selskapet har
-bygget mer norsk erfaring.
-
-\subsubsection{Tverrgående arbeid og sentrale antagelser}
-
-To aktiviteter må gå på tvers av alle fasene. Den første er regulatorisk
-arbeid mot Luftfartstilsynet og EASA
-\parencite{luftfartstilsynet2023, euuas2021}. Dette bør eies av én
-dedikert ansvarlig, fordi driftsgodkjenninger avgjør hvor og hvor raskt
-Zipline kan skalere. Den andre er partnerarbeid. Uten relevante butikker
-og restauranter har Zipline lite å levere, uansett hvor god teknologien
-er.
-
-Planen bygger også på tre antagelser som må følges løpende. For det
-første antas det at Wing \parencite{wing2024} og Manna ikke etablerer
-seg tungt i Norge i planperioden. For det andre antas det at regelverket
-ikke åpnes så raskt at Foodora og Wolt enkelt kan kopiere dronelevering.
-For det tredje antas det at norske vinterforhold ikke skaper så mange
-avbrudd at kundeopplevelsen svekkes. Hvis én av disse antagelsene
-faller, må planen revideres, ikke bare justeres taktisk.
+Planen bygger på tre antagelser som må følges løpende. Først antas det at
+Wing \parencite{wing2024} og Manna ikke etablerer seg tungt i Norge i
+perioden. Deretter antas det at Foodora og Wolt ikke raskt kan kopiere
+dronelevering gjennom eget regelverksgjennombrudd. Til slutt antas det at
+norske vinterforhold ikke gir så mange avbrudd at kundeopplevelsen svekkes.
+Hvis en av antagelsene faller, må planen revideres.
