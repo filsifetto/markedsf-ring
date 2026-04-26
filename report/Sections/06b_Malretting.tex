@@ -1,13 +1,7 @@
-% Agent documentation:
-% Purpose: translate the segment hierarchy into channel and message priorities.
-% Downstream use: informs CAC assumptions, activity-program channel choices,
-% pilot tests, and control metrics.
-% Revision guardrails: keep the logic tied to measurable segment differences.
-% If channel priorities change, update Sections 07a, 07b, 07c, and 08.
 \subsection{Målretting}
 
 Zipline bør velge en differensiert målrettingsstrategi der kanal,
-budskap og virkemidler tilpasses hvert av de tre prioriterte segmentene. En
+budskap og virkemidler tilpasses hvert av de to prioriterte segmentene. En
 udifferensiert tilnærming gir for høy CAC, fordi det reelle markedet er
 begrenset til noen få geografiske klynger og adopsjonsbarrierene varierer
 betydelig mellom segmentene.
@@ -18,10 +12,10 @@ Udifferensiert målretting passer massemarkedsmerker som Coca-Cola eller
 McDonald's \parencite[Forelesning 4]{aspelund2026_forelesninger}, men er feil for Zipline av
 to grunner. For det første treffer den forbrukere utenfor dronedekningen
 eller med for høy adopsjonsbarriere, og bomskuddene må regnes inn i CAC for
-de få som faktisk konverterer. For det andre forutsetter den at samme
-budskap fungerer likt på tvers av segmenter, mens adopsjonsbarrieren for en
-35-årig toinntektsfamilie i Bærum og en 72-åring på Slemdal er fundamentalt
-forskjellig.
+de få som faktisk konverterer. 
+For det andre forutsetter den at samme budskap fungerer likt på tvers av
+segmenter, men adopsjonsbarrieren skiller seg vesentlig mellom en
+toinntektsfamilie i Bærum og en husholdning på Nesodden.
 
 Differensiert målretting lar Zipline bruke ulike budskap og kanaler per
 segment, og optimere mot målbare utfall \parencite[Forelesning 4]{aspelund2026_forelesninger}.
@@ -48,26 +42,21 @@ risiko \parencite{rogers2003}.
 
 \subsubsection{Segmentspesifikk målretting}
 
-\textbf{Forstadsområder -- Bærum og Asker (primærsegment): publikumsbasert
+\textbf{Suburbane eneboligshusholdninger -- Bærum og Asker (primærsegment): publikumsbasert
 hovedkanal.}
 Segmentet er stort, geografisk veldefinert og digitalt aktivt, og bruker
 allerede Foodora og Wolt. Hovedkanalen er derfor publikumsbasert
 markedsføring, som lar Zipline treffe forbrukerne med et differensierende
 budskap i de samme digitale kanalene de allerede bruker.
 
-\textbf{Distrikter -- Nesodden (sekundærsegment): intensjons- og
+\textbf{Logistikkisolerte områder -- Nesodden (sekundærsegment): intensjons- og
 relasjonsbasert hovedkanal.}
-Etterspørselen etter matlevering er til stede, mens tilbudet ikke er det.
+Etterspørselen etter matlevering er til stede, mens tilbudet er mer
+fragmentert og mindre fleksibelt enn i sentrale områder.
 Hovedkanalen er derfor intensjonsbasert markedsføring som fanger opp et
 eksisterende behov, supplert av relasjonsbasert markedsføring som utnytter
 den tette interne informasjonsflyten i et lite lokalsamfunn.
 
-\textbf{Holmenkollen-klyngen -- Holmenkollen, Slemdal og Vinderen
-(tertiærsegment): relasjonsbasert hovedkanal.}
-Adopsjonsbarrieren er høyest, og brukere over 67 år dekkes svakere av
-digitale plattformer og søker sjelden etter ukjente tjenester
-\parencite{ssb2023}. Hovedkanalen er derfor relasjonsbasert markedsføring,
-der personlig tillit og lokal forankring bærer adopsjonen.
 
 \subsubsection{Måling og budsjettprioritering}
 
