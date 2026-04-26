@@ -1,6 +1,6 @@
 % Agent documentation:
 % Purpose: specify how the activity program is monitored, diagnosed, and
-% adjusted during the Nesodden, Bærum, and Asker rollout.
+% adjusted during the Nesodden, Bærum, and possible Asker rollout.
 % Downstream use: provides go/no-go logic for operational decisions.
 % Revision guardrails: mirror the KPIs and thresholds in Sections 05, 07b, and
 % 07c. Keep phase gates at months 3, 6, 12, 18, and 24.
@@ -17,24 +17,29 @@ markedsmålene i \ref{sec:malsetninger} og til KPI-ene i tiltakskapittelet.
 
 Hvert aktivt marked bør måles månedlig. De viktigste operative indikatorene
 er leveringstid, punktlighet, avviksrate og kanselleringer. De viktigste
-markedsindikatorene er CAC, konverteringsrate, snittkurv, gjenkjøp og andel
-aktive kunder. I tillegg bør Zipline måle opplevd trygghet, støyreaksjoner,
-NPS og anbefalinger fra eksisterende kunder.
+markedsindikatorene er aktiv kundebase, gjenkjøp, andel ordre som erstatter
+substitutter, CAC per aktiv kunde og konvertering til første kjøp. Snittkurv
+og bidragsmargin bør også måles, men de bør komme etter kundevekst og
+gjenkjøp i tidlig fase. I tillegg bør Zipline måle opplevd trygghet,
+støyreaksjoner, NPS og anbefalinger fra eksisterende kunder.
 
 Avvik må diagnostiseres før tiltak velges. Hvis leveringstiden svikter, må
 ruteplanlegging, base eller leveringspunkter justeres. Hvis mange prøver
 tjenesten, men få bestiller på nytt, ligger problemet trolig i verdiforslaget,
-sortimentet eller appopplevelsen. Hvis kjennskapen er høy, men første kjøp er
-lavt, må førstegangstilbudet eller risikokommunikasjonen forbedres.
+sortimentet eller appopplevelsen. Hvis mange besøker appen fra dekningssonen,
+men få kjøper, må førstegangstilbudet, sikkerhetsbudskapet eller
+bestillingsflyten forbedres. Kjennskap bør måles, men den bør ikke være en
+hoved-KPI i denne fasen.
 
 \subsubsection{Faseporter}
 
 Faseoverganger skal være beslutninger, ikke kalenderautomatikk. Ved måned 3
-vurderes de første Nesodden-dataene. Ved måned 6 avgjøres om primærsegmentet
-kan forberedes eller om Nesodden må forlenges. Ved måned 12 vurderes Bærum
-før Asker eventuelt skaleres opp innenfor samme fase. Ved måned 18 vurderes
-om Bærum og Asker samlet oppfyller kravet til aktiv kundebase og gjenkjøp.
-Ved måned 24 avgjør ledelsen hvilket marked Zipline bør gå videre til.
+vurderes de første Nesodden-dataene. Ved måned 6 avgjøres om Bærum kan
+forberedes eller om Nesodden må forlenges. Ved måned 12 vurderes Bærum før
+Asker eventuelt legges til som replisering innen samme segment. Ved måned 18
+vurderes Bærum og eventuell drift i Asker opp mot kravet til aktiv kundebase og
+gjenkjøp. Ved måned 24 avgjør ledelsen hvilket marked Zipline bør gå videre
+til.
 
 Ved måned 12 bør Zipline også gjennomføre en enkel posisjonsmåling i
 primærsegmentet. Målingen bør teste om respondentene spontant knytter
@@ -62,12 +67,12 @@ Operative KPI-er &
 Operasjonell ansvarlig. Kan justere ruter, base, leveringspunkter og flåtebruk. \\
 \rowcolor{tablerow}
 Markedsmessige KPI-er &
-Markedsansvarlig. Kan justere budskap, kanalbruk, førstegangstilbud og budsjett. \\
+Markedsansvarlig. Kan justere budskap, kanalbruk, førstegangstilbud, byttekampanjer og budsjett. \\
 Aksept, trygghet og støy &
 Kommunikasjonsansvarlig. Kan justere lokal informasjon, sikkerhetsbudskap og naboarbeid. \\
 \rowcolor{tablerow}
 Partnerresultater og sortiment &
-Partneransvarlig. Kan justere partnerprioritering, kampanjer og vareutvalg. \\
+Partneransvarlig. Kan justere partnerprioritering, kampanjer, pakker og vareutvalg. \\
 Faseporter ved måned 3, 6, 12, 18 og 24 &
 Ledelsen. Tar go/no-go-beslutninger og bestemmer om planen skal justeres. \\
 \rowcolor{tablerow}
