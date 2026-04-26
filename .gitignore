@@ -18,8 +18,7 @@
 *.snm
 *.vrb
 
-# LaTeX build PDF output (source PDFs in references/, drafts/, etc. stay tracked)
-report/main.pdf
+# LaTeX build PDFs are tracked in report/ for GitHub (run latexmk after edits)
 
 # Build directory
 build/
