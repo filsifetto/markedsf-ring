@@ -12,6 +12,8 @@
 
 \mainmatter
 
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+
 \import{./Sections/}{01_Problembeskrivelse}
 \import{./Sections/}{02_Intern_analyse}
 \import{./Sections/}{03_Ekstern_analyse}
@@ -24,8 +26,10 @@
 \newpage
 \printbibliography[heading=bibintoc, title={Referanser}]
 
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
 \addappendix
 \import{./Appendices/}{A_Sporreundersokelse}
 \import{./Appendices/}{B_Fokusgruppe}
+\import{./Appendices/}{C_okonomisk_analyse}
 
 \end{document}
