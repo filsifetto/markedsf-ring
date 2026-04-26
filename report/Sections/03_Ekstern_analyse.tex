@@ -1,13 +1,4 @@
-% Agent documentation:
-% Purpose: analyse external macro conditions with PESTEL and industry structure
-% with Porter before the SWOT synthesis.
-% Downstream use: supports the SWOT, market goals, segment selection, partner
-% strategy, regulatory assumptions, and economic analysis.
-% Revision guardrails: keep PESTEL focused on macro conditions and Porter
-% focused on competitive forces. If regulations, market actors, or public
-% funding figures change, update dependent claims in Sections 04, 05, 07, and 08.
 \section{Ekstern analyse}
-
 Den eksterne analysen ser på hvilke makroforhold og strukturelle
 krefter som former Ziplines handlingsrom i det norske markedet. PESTEL brukes
 til å kartlegge makroomgivelsene, mens Porters Five Forces analyserer
@@ -24,21 +15,19 @@ henholdsvis ytre rammebetingelser og indre konkurransedynamikk.
 \subsection{PESTEL}
 
 \subsubsection{Politiske faktorer}
-
 Norges politikk for digitalisering og miljøvennlig transport tilsier at
 myndighetene kan være positivt innstilt til dronelogistikk, men
 politiske aktører kan motsette seg automatisering som erstatter sjåfør- og
-budjobber. Den politiske dimensjonen i PESTEL omfatter blant annet
-myndighetenes strategiske satsinger, offentlige bevilgninger og graden av
-støtte til utvalgte sektorer \parencite{kotlerkellerchernev2022}. På
+budjobber.  På
 droneområdet er den politiske støtten i Norge konkret. Regjeringen la i
 2025 fram Norges første stortingsmelding om droner og bevilget samtidig 50
 millioner kroner til testing av null- og lavutslippsluftfart
 \parencite{stortingsmelding2025}. Statsbudsjettet for 2025 viderefører
 prioriteringen av samferdsels- og luftfartsområdet gjennom dedikerte
 bevilgninger til testordninger og utviklingsmiljøer for ubemannet luftfart
-\parencite{prop1s2024}. Samtidig har norsk politikk en sterk tradisjon for
-å verne om arbeidsplasser i transport- og varehandelsnæringen.
+\parencite{prop1s2024}. Samtidig har norsk politikk en sterk tradisjon for å verne om
+arbeidsplasser i transport- og varehandelsnæringen
+\parencite{hurdalsplattformen2021}.
 Fellesforbundet har i sin samferdselspolitiske landsmøteuttalelse eksplisitt
 krevd at digitalisering og automatisering i sektoren må reguleres slik at
 hensynet til arbeidsliv, kompetanse og sikkerhet ivaretas
@@ -47,36 +36,54 @@ dermed i to retninger og gjør Zipline avhengig av både fortsatt
 regjeringsstøtte til ubemannet luftfart og av tett dialog med fagbevegelsen
 om sysselsettingseffektene for å bevare politisk legitimitet over tid.
 
-
 \subsubsection{Økonomiske faktorer}
-
 Det høye kostnadsnivået i Norge gjør at Zipline må vurdere nøye om
 forretningsmodellen er økonomisk bærekraftig i det norske markedet. Norge har
 blant Europas høyeste lønninger og driftskostnader \parencite{ssb2024}, noe
-som øker investeringsbehovet betydelig. Samtidig kan droneleveranse være mer
-kostnadseffektivt enn tradisjonell logistikk i distriktene, der spredt
-bosetting og krevende geografi gjør vanlig distribusjon dyrere. Den høye
-kjøpekraften i befolkningen, sammen med offentlig betalingsvilje og mulige
-subsidier til innovativ og grønn infrastruktur, kan gi viktige inntekts- og
-finansieringsmuligheter. Zipline opererer i dollar, og svingninger i NOK/USD-%
-kursen skaper en valutarisiko som må håndteres. 
+som både øker investeringsbehovet og styrker verdien av en modell som
+reduserer behovet for manuell sjåførkapasitet. Allmenngjort minstelønn for
+varebiltransport viser at lønnskostnaden i sisteleddet er en konkret
+kostnadsdriver for tradisjonell hjemlevering \parencite{nholt2025_varebil}.
+Samtidig er markedet som Zipline går inn i kommersielt betydelig.
+Dagligvarehandelen omsatte for 238{,}3 milliarder kroner i 2024, mens
+detaljhandelen samlet omsatte for 650{,}6 milliarder kroner
+\parencite{ssb2025_detaljhandel}. Foodora Norway hadde 971{,}9 millioner
+kroner i driftsinntekter i 2024 \parencite{purehelp2025_foodora}, mens Wolt
+hadde 211 millioner kroner i inntekter i 2023 \parencite{wolt2024_e24}. Dette
+viser at betalingsviljen for plattformbasert hjemlevering finnes, men ikke at
+den automatisk overføres til dronelevering. Hjemlevering av dagligvarer er
+fortsatt mindre modent i Norge enn i flere sammenlignbare markeder, og Wolt
+Market oppgir at netthandelsandelen for dagligvarer i Norge var 2{,}4~\% i
+2023 \parencite{retailmagasinet2025_woltmarket}. Finansieringskostnaden er
+også relevant fordi utrullingen er kapitalintensiv. Norges Bank satte
+styringsrenten ned fra 4{,}5 til 4{,}25~\% i juni 2025, men vurderte fortsatt
+pengepolitikken som innstrammende \parencite{norgesbank2025_rente}. Zipline
+opererer i dollar, og svingninger i NOK/USD-kursen skaper i tillegg en
+valutarisiko som må håndteres.
 
 \subsubsection{Sosiale faktorer}
-
 Norges befolkningsstruktur og teknologikultur gir Zipline et godt sosialt
 utgangspunkt for markedsinntreden, men lokal skepsis kan utfordre aksepten.
 Norges spredte befolkning med mange distriktssamfunn langt fra tradisjonell
-logistikkinfrastruktur representerer et naturlig kjernesegment for
-droneleveranse. Nordmenn er generelt teknologipositive og raske til å adoptere
-ny teknologi, noe som senker terskelen for aksept av en ny leveringsform
-\parencite{wef2024_tech_adoption}. Samtidig setter boligstrukturen rammer for
-hvor praktisk gjennomførbar droneleveranse er, ettersom eneboliger i
-distriktene og forstedene typisk har privat uteareal som egner seg godt til
-droneleveranse. I boligblokker og leilighetskomplekser finnes det derimot
-sjelden egnede private landingsområder, noe som reiser spørsmål om sikkerhet,
-ansvar og identifisering av riktig mottaker. Derimot kan støy fra
-droneoperasjoner over bolig- og naturområder møte motstand i lokalsamfunn,
-særlig i tettbygde strøk. 
+logistikkinfrastruktur representerer et naturlig behovsgrunnlag for
+droneleveranse. Det sosiale grunnlaget bør likevel vurderes mer konkret enn
+generell teknologipositivitet. PostNord viser at 82~\% av norske forbrukere
+handlet på nett i løpet av siste måned, og at 67~\% betalte for frakt ved sitt
+siste nettkjøp \parencite{postnord2025_netthandel}. Det indikerer at norske
+forbrukere allerede er vant til digitale kjøp og leveringsbetaling, men sier
+ikke direkte hvor stor betalingsviljen er for dronelevering. Samtidig har
+Foodora og Wolt etablert digitale bestillingsflater i en rekke norske byer og
+områder \parencite{foodora2026_byer, wolt2026_asker_sandvika}. Dette senker
+adopsjonsbarrieren for appbasert hjemlevering, men øker også kravet til at
+Zipline oppleves som like enkelt og pålitelig som eksisterende alternativer.
+Boligstrukturen setter dessuten klare rammer for hvor praktisk gjennomførbar
+droneleveranse er, ettersom eneboliger i distriktene og forstedene typisk har
+privat uteareal som egner seg godt til droneleveranse. I boligblokker og
+leilighetskomplekser finnes det derimot sjelden egnede private
+landingsområder, noe som reiser spørsmål om sikkerhet, ansvar og
+identifisering av riktig mottaker. Derimot kan støy fra droneoperasjoner over
+bolig- og naturområder møte motstand i lokalsamfunn, særlig i tettbygde
+strøk.
 
 \subsubsection{Teknologiske faktorer}
 
@@ -87,17 +94,16 @@ hadde 99{,}7~\% av husstandene grunnleggende 5G-dekning, mens om lag 70~\% av
 landarealet var dekket av 5G-signal \parencite{nkom2024_5g}. 
 Høy dekning og lav ventetid er en forutsetning for BVLOS-operasjoner, som
 avhenger av kontinuerlig telemetri og sanntids posisjonsdeling mellom drone
-og fjernpilot \parencite{easa2021_c2}.
+og fjernpilot \parencite{easa2016_c2_datalink}.
 Zipline er avhengig av høypresis satellittnavigasjon (GNSS) med
 RTK-korreksjon (Real-Time Kinematic) for å oppnå centimeternøyaktighet
 ved pakkeslipp \parencite{novatel2018_zipline}. Norge har en moden
 GNSS-infrastruktur med tilgang til både GPS og det europeiske
-Galileo-systemet, og Kartverkets posisjonstjeneste CPOS leverer
-nasjonal centimeternøyaktig data i sanntid
-\parencite{kartverket_cpos}. Dette gir Zipline et godt teknologisk
+Galileo-systemet \parencite{kartverket_cpos}. 
+Dette gir Zipline et godt teknologisk
 grunnlag for droneleveranser i Norge. Samtidig er nordlige breddegrader mer
 eksponert for romvær og ionosfæriske forstyrrelser som kan svekke
-eller forstyrre GNSS-signaler, noe zipline må ta hensyn til.
+eller forstyrre GNSS-signaler, noe Zipline må ta hensyn til
 \parencite{jordensmagnetfelt_romvaer}.
 
 \subsubsection{Miljømessige faktorer}
@@ -111,14 +117,20 @@ derfor være betydelig. Også sammenlignet med sykkelbud tilbyr Zipline et mer
 skalerbart lavutslippsalternativ over lengre distanser og i krevende terreng.
 Støy kan likevel utgjøre en miljøutfordring, særlig i naturområder og
 boligstrøk. Zipline forsøker imidlertid å redusere denne belastningen, som
-nevnt tidligere. I tillegg viser studier at droner kan forstyrre dyrelivet,
+nevnt i internanalysen (kapittel 2). I tillegg viser studier at droner kan forstyrre dyrelivet,
 som kan oppfatte dronene som rovfugler og reagere med
 stress, fluktatferd eller direkte angrep mot dronen \parencite{afridi2025}.
 Dette gjør det viktig at Zipline planlegger flyruter som unngår hekkeområder
 og sårbar natur, særlig i Norges mange verneområder og langs kjente
 fugletrekkruter. Norges ambisiøse klimamål og høye miljøbevissthet i
 befolkningen styrker Ziplines posisjon som et bærekraftig alternativ til
-tradisjonell logistikk.
+tradisjonell logistikk. Klimaendringer skaper samtidig en operasjonell
+usikkerhet. Meteorologisk institutt peker på at Norge må vente mer nedbør,
+hyppigere styrtregn, mindre snø og flere flom- og skredhendelser i årene
+fremover \parencite{met2025_klima_norge}. For Zipline betyr dette at
+værrobusthet ikke bare er et vinterproblem, men en løpende miljømessig
+rammebetingelse som må kobles til testing av vinterdrift, vindgrenser og
+ruteplanlegging.
 
 \subsubsection{Juridiske faktorer}
 
@@ -128,8 +140,12 @@ avtalen, skiller juridisk mellom autonome og ikke-autonome droner
 \parencite{euuas2021}. EØS-tilknytningen gir forutsigbarhet for aktører som
 opererer på tvers av landegrensene, men innebærer samtidig at Norge ikke
 har direkte påvirkningskraft på regelverksutviklingen i EU. Ettersom Zipline
-benytter en fjernpilot (RPIC) med kommando over dronen, klassifiseres den
-som ikke-autonom og underlegges et mildere regelverk. Selskapet må likevel
+opererer med en fjernpilot (RPIC) som har overordnet kommando, vil systemet
+etter all sannsynlighet klassifiseres som ikke-autonomt under EU/EASA-%
+rammeverket og underlegges et mildere regelverk. Dette må likevel verifiseres
+gjennom dialog med Luftfartstilsynet, ettersom grensen mellom autonom og
+fjernstyrt operasjon er gjenstand for tolkning, og en strengere
+klassifisering vil endre godkjenningsløpet vesentlig. Selskapet må i tillegg
 innhente BVLOS-tillatelse (Beyond Visual Line of Sight) fra
 Luftfartstilsynet, ettersom dronene opererer utenfor pilotens
 synsrekkevidde \parencite{luftfartstilsynet2023}. Videre stiller norsk
@@ -148,21 +164,30 @@ Kombinasjonen av nullutslippsdrift og en tilnærmet fornybar norsk
 strømmiks treffer norske klimamål direkte. Dette argumentet veier
 tyngre overfor politiske beslutningstakere enn overfor sluttkunder som
 primært prioriterer pris og leveringstid \textbf{(SPØRREUNDERSØKELSE KILDE)}.
-Regulatorisk bør Zipline utnytte at Aviant allerede har modnet
-BVLOS-rammeverket i Norge, og søke godkjenninger inn under den
-eksisterende infrastrukturen. 
-Dette reduserer både tidsbruk og risiko i
-godkjenningsprosessene. Samtidig må selskapet tidlig forholde seg til
+Samtidig må Zipline håndtere den politiske motstanden mot automatisering
+gjennom tidlig dialog med fagbevegelsen og ved å vektlegge at tjenesten i
+første omgang supplerer eksisterende leveringskapasitet i områder der
+Foodora og Wolt har svak dekning, heller enn å erstatte etablerte budjobber.
+Økonomisk bør valutarisikoen håndteres eksplisitt gjennom NOK-fakturering
+mot norske partnere og en vurdering av valutasikring for større
+dollarbaserte investeringer. Sosialt må utrullingen styres av boligstrukturen
+i målmarkedene, fordi eneboliger og rekkehus med privat uteareal er langt mer
+egnet for direkte droneleveranse enn tette leilighetsområder.
+
+Regulatorisk er det rimelig å anta at Aviants pågående BVLOS-drift bidrar
+til å modne det regulatoriske rammeverket og bygge presedens, men Zipline må
+regne med å gjennomføre en egen, fullstendig godkjenningsprosess uavhengig
+av Aviant. Samtidig må selskapet tidlig forholde seg til
 personvernlovgivningen og forsikringskravene for ubemannet luftfart,
 ettersom begge må være avklart før kommersiell drift kan settes i gang.
 Operasjonelt må Zipline tette tre konkrete kunnskapshull før skaleringen
-kan starte. Vinterdriften må valideres under reelle norske forhold,
-GNSS-løsningen må hardføres mot ionosfæriske forstyrrelser på nordlige
-breddegrader, og ruteplanleggingen må eksplisitt unngå hekkeområder og
-verneområder. Disse oppgavene bør løses parallelt med
-markedsetableringen, ettersom hver av dem kan utløse
-regulatoriske eller omdømmemessige tilbakeslag som vanskelig kan
-reverseres.
+kan starte. Av disse er BVLOS-godkjenningen den eneste som kan stoppe
+lansering helt, og må derfor prioriteres først. Vinterdriften må valideres
+under reelle norske forhold, GNSS-løsningen må hardføres mot ionosfæriske
+forstyrrelser på nordlige breddegrader, og ruteplanleggingen må eksplisitt
+unngå hekkeområder og verneområder. Vinterdrift og GNSS-hardening kan løses
+parallelt med pilotdrift, mens ruteplanlegging unna verneområder må
+ferdigstilles før hver enkelt markedsetablering.
 
 \subsection{Porters Five Forces}
 
@@ -259,7 +284,7 @@ Oda og dagligvarebutikker innen gangavstand.
 Porter definerer et substitutt som et produkt som fyller samme funksjon for
 kjøperen \parencite[23]{porter1980}, her tilgang på mat og dagligvarer innen
 akseptabel tid. Foodora, Wolt og Oda dekker allerede det såkalte
-«last mile»-problemet, og dagligvarebutikker innen
+«last mile»-problemet \parencite{gevaers2011}, og dagligvarebutikker innen
 gangavstand dekker akutte innkjøp. Substituttenes strukturelle styrke ligger
 i dekningsbredde, ikke i pris eller hastighet. Foodora, Wolt og Oda håndterer
 alle vekter, varegrupper og leveringsadresser, mens Ziplines Platform 2 er
@@ -302,7 +327,4 @@ privat uteareal ikke er begrensende, og der eksisterende plattformer i
 mindre grad allerede dekker behovet til en pris og hastighet markedet
 aksepterer. Samtidig må attraktive dagligvare- og restaurantpartnere
 låses inn tidlig, ettersom maktbalansen i forhandlingsfasen i dag
-favoriserer partnerne, og førsteetableringsfortrinnet overfor Wing og
-Amazon avhenger av at både regulatoriske godkjenninger og kommersielle
-avtaler er på plass før EUs U-space-rammeverk liberaliseres ytterligere.
-Strategiske valg konkretiseres videre i markedsstrategikapittelet.
+favoriserer partnerne.
