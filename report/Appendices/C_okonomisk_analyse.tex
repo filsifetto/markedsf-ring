@@ -12,13 +12,16 @@ tabell~\ref{tab:sensitivitet}.
 \label{app:capex}
 
 Zipline oppgir ikke offentlige kostnader for Platform 2-dronen, og det
-finnes ingen tilgjengelig prisliste for VTOL-leveringsdroner i samme
+finnes ingen offentlig prisliste for VTOL-leveringsdroner i samme
 klasse. Som referansepunkt brukes Wingcopter 198, en kommersiell
-tilt-rotor-VTOL med 5 kg nyttelast og BVLOS-sertifisering under arbeid,
-der bransjekilder oppgir en enhetspris i området 80~000--100~000 USD
-\parencite{dronedeliverypro2024}. Et basisanslag på 90~000 USD per
-drone, eller om lag 945~000 NOK ved en kurs på 10{,}5 NOK/USD, brukes
-videre. Fase 1 (Nesodden) er piloten og krever en flåte på fem droner,
+tilt-rotor-VTOL med 5 kg nyttelast og BVLOS-sertifisering under arbeid.
+Wingcopters avtale med Spright på 16 millioner USD for en større flåte
+\parencite{verticalmag_wingcopter_spright} gir en realistisk pekepinn
+på prisleiet, selv om eksakt antall droner i avtalen ikke er
+offentliggjort. Et basisanslag på 80~000 til 100~000 USD per drone er
+på linje med tilgjengelig industriinformasjon for BVLOS-sertifiserte
+VTOL-droner i denne klassen. Et basistall på 90~000 USD per drone, eller
+om lag 945~000 NOK ved en kurs på 10{,}5 NOK/USD, brukes videre. Fase 1 (Nesodden) er piloten og krever en flåte på fem droner,
 tilsvarende 4{,}7 MNOK i drone-CAPEX. I fase 2 utvides flåten med 10
 til 13 droner for å betjene Bærum og Asker, noe som gir inkremental
 drone-CAPEX på rundt 9{,}5--12 MNOK. I fase 3 legges ytterligere to til
@@ -29,17 +32,18 @@ markeder, tilsvarende rundt 2--3 MNOK i drone-CAPEX.
 \label{app:hub}
 
 En hub med launchpad, lading, lager og programvareintegrasjon ved Alti
-Vinterbro estimeres til 1{,}5 MNOK basert på industribenchmark for
-distribusjonssentre i samme kategori \parencite{freightamigo2025}.
+Vinterbro estimeres til 1{,}5 MNOK. \textcite{freightamigo2025} oppgir
+at en full vertiport koster om lag 1{,}9 MNOK, mens et delt anlegg
+ligger rundt 0{,}5 MNOK. Et middels stort hub uten full
+vertiport-kapasitet ligger naturlig mellom disse to.
 Luftfartstilsynet krever 20~000 NOK årlig gebyr for godkjent operatør i
 spesifikk kategori, pluss saksbehandlings\-gebyr etter regning
-\parencite{uasnorway2025_gebyr}. Hovedkostnaden ligger i ekstern
-rådgivning og teknisk dokumentasjon for SORA-vurdering og
-BVLOS-søknad, som for sammenlignbare europeiske oppstartsprosjekter
-ligger på 50~000--150~000 EUR \parencite{proflycenter2024}, tilsvarende
-0{,}6--1{,}8 MNOK. Et basisanslag på 1{,}0 MNOK brukes videre. Inkludert
-reserve for uforutsette kostnader lander samlet pilot-CAPEX på
-7{,}7 MNOK.
+\parencite{uasnorway2025_gebyr}. I tillegg kommer ekstern rådgivning og
+teknisk dokumentasjon for SORA-vurdering og BVLOS-søknad. Konsulentpriser
+for slike tjenester er ikke offentlig publisert, og 1{,}0 MNOK brukes
+som internt anslag for omfanget av en kommersiell BVLOS-søknad.
+Inkludert reserve for uforutsette kostnader lander samlet pilot-CAPEX
+på 7{,}7 MNOK.
 
 \subsubsection{Fast OPEX inkludert markedsbudsjett}
 \label{app:fastopex}
@@ -55,11 +59,20 @@ yrkesskadeforsikring. Ved gjennomsnittlig brutto årslønn på 850~000 NOK
 gir dette en samlet arbeidskraftkostnad på 1{,}15 MNOK per årsverk per
 år, eller om lag 480 k per måned for fem stillinger. Leie av et
 hub-areal på 175 m\textsuperscript{2} ved Vinterbro (kombi kontor og
-lager) anslås til 1~300 NOK/m\textsuperscript{2}/år
-\parencite{metra2025}, tilsvarende 19 k per måned. Ansvarsforsikring
-for en flåte på fem droner i BVLOS-drift anslås til 20 k per måned
-basert på europeiske benchmarks for kommersiell BVLOS-forsikring
-\parencite{coverdrone2025, jouav2024_insurance}. Markedsbudsjettet fordeles på tiltakene som beskrives i
+lager) anslås til 1~300 NOK/m\textsuperscript{2}/år, tilsvarende 19 k
+per måned. Anslaget er utledet fra publiserte leiepriser i
+Oslo-regionen, der periferiområder som Asker (1~900--2~300 NOK/m²/år) og
+Sandvika (2~000--2~500 NOK/m²/år) ligger lavest blant kontorlokaler
+\parencite{spacefinder2025}. Vinterbro ligger lenger fra Oslo enn
+Asker, og kombi-arealer prises typisk 30 til 50 prosent under pure
+kontor, noe som plasserer 1~300 NOK/m²/år midt i et derivert spenn på
+om lag 950--1~500 NOK/m²/år. Ansvarsforsikring
+for en flåte på fem droner i BVLOS-drift anslås til 20 k per måned.
+\textcite{bwi_droneinsurance} oppgir at enterprise-droneoperasjoner
+typisk koster 10\,000 til 25\,000 USD per år avhengig av flåtestørrelse,
+automatiseringsgrad og BVLOS-tillegg. Vårt anslag på 20 k NOK per
+måned tilsvarer om lag 23\,000 USD per år, og ligger dermed i øvre del
+av det oppgitte spennet på grunn av BVLOS-premien. Markedsbudsjettet fordeles på tiltakene som beskrives i
 aktivitetsprogrammet, og skaleres opp gjennom fasene etter hvert som
 nye markeder kommer til. Allokeringen følger kanalvalget per segment
 fra målrettingen. For Nesodden vektes intensjons- og relasjonsbaserte
@@ -119,11 +132,13 @@ vises i tabell~\ref{tab:fasekostnader}.
 \subsubsection{Variabel OPEX per leveranse}
 \label{app:variabelopex}
 
-Energiforbruket for en VTOL-drone i Platform 2-klassen estimeres til
-0{,}5--0{,}8 kWh per tur-retur-leveranse \parencite{stolaroff2018}, noe
-som med en kommersiell strømpris på 1{,}30 NOK/kWh inkludert nettleie,
-elavgift og MVA \parencite{ssb2026_strompris} gir under 1 NOK i
-energikostnad per leveranse. Vedlikehold er hovedkilden til usikkerhet.
+Energiforbruket for Platform 2 anslås til 0{,}5--0{,}8 kWh per
+tur-retur-leveranse. Anslaget bygger på \textcite{stolaroff2018}, som
+måler 0{,}074 Wh per meter for en octocopter med tilsvarende nyttelast,
+anvendt på en typisk leveringsdistanse på 7--11 km tur-retur. Med en
+kommersiell strømpris på 1{,}30 NOK/kWh inkludert nettleie, elavgift og
+MVA \parencite{ssb2026_strompris} gir det under 1 NOK i energikostnad
+per leveranse. Vedlikehold er hovedkilden til usikkerhet.
 Manna Aero, som er den mest transparente sammenlignbare aktøren, oppgir
 om lag 4 USD per leveranse ved nåværende drift, med ambisjon om 1 USD
 ved skala \parencite{sacra2025_manna}. På pilotvolum allokeres slitasje
@@ -145,9 +160,12 @@ Foodoras 49--59 NOK \parencite{allrestaurantmenus2026}, og settes til
 29 NOK. Partnerprovisjonen settes til 25~\% av bestillingsverdien,
 lavere enn Foodoras 30--35~\% og i nedre sjikt av Wolts 20--30~\%
 \parencite{nettavisen2024_foodora}, for å gjøre Zipline attraktiv for
-partnere i oppstartsfasen. Snittbestilling antas å være 250 NOK basert
-på typisk ordreverdi for restaurantsegmentet i Norden
-\parencite{statista2024_food_delivery_norway}. Samlet inntekt per
+partnere i oppstartsfasen. Snittbestilling antas å være 250 NOK. Statista oppgir ARPU for Platform
+Delivery i Norge til 134{,}80 USD per år, om lag 1\,415 NOK
+\parencite{statista2024_food_delivery_norway}, som ved en typisk
+bestillingsfrekvens på 5 til 7 ordrer per aktiv bruker per år
+impliserer en snittordre i området 200--280 NOK. 250 NOK er valgt som
+midtpunkt. Samlet inntekt per
 leveranse blir dermed $29 + 0{,}25 \times 250 = 91{,}5$ NOK.
 
 \subsubsection{Volum og kontantstrømberegninger}
