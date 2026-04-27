@@ -15,11 +15,69 @@ tydelig tilgjengelighetsproblem og gir et kontrollert læringsmarked. Bærum
 kommer etterpå fordi markedet tester om Zipline kan vinne kunder fra Foodora
 og Wolt i primærsegmentet.
 
-Kapittelet har fire deler. Først beskrives konkrete tiltak knyttet til
-posisjonering og kjøpsbarrierer. Deretter beskrives Nesodden som første fase.
-Tredje del viser en 24 måneders plan fra første lansering. Siste del viser
-hvordan fasene skal følges opp og justeres underveis
-\parencite[697]{kotlerkeller2016}.
+Kapittelet er bygd opp i fire deler. Tiltakene etablerer den taktiske
+rammen rundt posisjonering og kjøpsbarrierer. Pilotbeskrivelsen viser
+hvordan Nesodden skal brukes som første fase. Den langsiktige planen
+skisserer 24-måneders ekspansjonen, og kontrollkapittelet beskriver
+hvordan fasene følges opp og justeres underveis.
+
+Figur~\ref{fig:gantt} viser tidslinjen for hele aktivitetsprogrammet,
+med faseinndeling, tverrgående arbeid og kontrollpunktene.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    x=0.62cm, y=0.65cm,
+    every node/.style={font=\footnotesize},
+    milestone/.style={diamond, draw, fill=highred,
+                      minimum size=5pt, inner sep=0pt}
+]
+% Background grid every 3 months
+\foreach \m in {0,3,6,9,12,15,18,21,24} {
+    \draw[gray!25, dashed, thin] (\m,0) -- (\m,5);
+}
+
+% Time axis
+\draw[->, thick, gray!60] (0,0) -- (25.5,0);
+\foreach \m in {0,3,6,9,12,15,18,21,24} {
+    \node[anchor=north, font=\scriptsize] at (\m,-0.05) {\m};
+}
+\node[anchor=north, font=\small] at (12,-0.6) {Måned};
+
+% Phases (top-down)
+\draw[fill=blue!35, draw=blue!60, rounded corners=1pt]
+    (0,3.5) rectangle (12,4.05);
+\node[anchor=west] at (0.2,3.78) {Fase 1: Nesodden};
+
+\draw[fill=orange!50, draw=orange!70, rounded corners=1pt]
+    (6,2.7) rectangle (18,3.25);
+\node[anchor=west] at (6.2,2.98) {Fase 2: Bærum og Asker};
+
+\draw[fill=green!40, draw=green!60, rounded corners=1pt]
+    (18,1.9) rectangle (24,2.45);
+\node[anchor=west] at (18.2,2.18) {Fase 3: Konsolidering};
+
+% Cross-cutting work
+\draw[fill=gray!25, draw=gray!50, rounded corners=1pt]
+    (0,1.1) rectangle (24,1.65);
+\node[anchor=west] at (0.2,1.38) {Regulatorisk arbeid};
+
+\draw[fill=gray!25, draw=gray!50, rounded corners=1pt]
+    (0,0.4) rectangle (24,0.95);
+\node[anchor=west] at (0.2,0.68) {Partnerarbeid};
+
+% Milestones at top
+\foreach \m/\lbl in {3/{LP}, 6/{SV/FP}, 12/{FP/PM}, 18/{FP}, 24/{FP}} {
+    \node[milestone] at (\m,4.7) {};
+    \node[anchor=south, font=\scriptsize, highred] at (\m,4.85) {\lbl};
+}
+\end{tikzpicture}
+\caption[Tidslinje for aktivitetsprogrammet]{Tidslinje for
+aktivitetsprogrammet over 24 måneder. Fase 1 og fase 2 overlapper i
+måned 6--12. LP = læringsport, SV = skaleringsvurdering, FP =
+faseport, PM = posisjonsmåling.}
+\label{fig:gantt}
+\end{figure}
 
 \import{./Sections/}{07a_Tiltak}
 
